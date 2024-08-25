@@ -18,6 +18,6 @@ UITAF also introduces a distinctive design pattern known as Domain Objects. Unli
 
 UITAF simplifies commonly used design patterns for handling repetitive operations. It allows you to supply data for an entire application page and populate it with a single command, significantly reducing the development time and complexity of test scripts, improving the efficiency of the testing process.
 
-## Who Should Use This Tool
+## Who Should Use This Project
 
-This tool is designed for existing Java Test Developers who want to simplify the process of test development. If you're looking to enhance productivity, reduce coding efforts, and maintain scalability as your application evolves, UITAF is the framework for you.
+This project is designed for existing Java Test Developers who want to simplify the process of test development. If you're looking to enhance productivity, reduce coding efforts, and maintain scalability as your application evolves, UITAF is the framework for you.
