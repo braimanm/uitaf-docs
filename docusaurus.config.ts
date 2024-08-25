@@ -68,7 +68,7 @@ const config: Config = {
       },
       items: [
         {
-          to: './app',
+          to: './test',
           label: 'Test Lab',
           position: 'left',
           target: '_blank',
