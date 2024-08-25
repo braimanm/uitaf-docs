@@ -39,7 +39,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/braimanm/uitaf-docs',
         },
         blog: false,
         theme: {
@@ -68,8 +68,8 @@ const config: Config = {
       },
       items: [
         {
-          to: '/app',
-          label: 'Example App',
+          to: './app',
+          label: 'Test Lab',
           position: 'left',
           target: '_blank',
         },

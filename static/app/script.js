@@ -21,10 +21,10 @@ document.getElementById('vehicleType').addEventListener('change', function () {
     cylinderCapacityGroup.classList.add('hidden');
 
     // Show relevant fields based on vehicle type
-    if (vehicleType === 'truck') {
+    if (vehicleType === 'Truck') {
         payloadGroup.classList.remove('hidden');
         totalWeightGroup.classList.remove('hidden');
-    } else if (vehicleType === 'motorcycle') {
+    } else if (vehicleType === 'Motorcycle') {
         modelGroup.classList.remove('hidden');
         cylinderCapacityGroup.classList.remove('hidden');
     }
@@ -54,7 +54,7 @@ function validateForm(formId) {
 
     // Check additional conditionally visible fields
     var vehicleType = document.getElementById('vehicleType').value;
-    if (vehicleType === 'truck') {
+    if (vehicleType === 'Truck') {
         var payload = document.getElementById('payload');
         var totalWeight = document.getElementById('totalWeight');
         if (payload.value === '') {
@@ -69,7 +69,7 @@ function validateForm(formId) {
         }
     }
 
-    if (vehicleType === 'motorcycle') {
+    if (vehicleType === 'Motorcycle') {
         var model = document.getElementById('model');
         var cylinderCapacity = document.getElementById('cylinderCapacity');
         if (model.value === '') {
