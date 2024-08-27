@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Test Automation Example
 
-This test automation example uses the UITAF open-source framework to perform UI testing on the Tricentis Vehicle Insurance Quote application located at [http://sampleapp.tricentis.com/101/](http://sampleapp.tricentis.com/101/). The test is executed using the Chrome browser and is supported only by Java 8.
+This test automation example uses the UITAF open-source framework to perform UI testing on the Vehicle Insurance Quote minimalistic application located at [http://uitaf.org/test/](http://uitaf.org/test/). The test is executed using the Chrome browser and is supported only by Java 8.
 
 ## [Prerequisites](./getting_started/prerequsits)
 
@@ -24,14 +24,14 @@ To build and execute the test automation solution, follow these steps:
    - Open a terminal and run the following command to clone the repository:
 
     ```bash
-    git clone https://github.com/braimanm/automation_example.git
+    git clone https://github.com/braimanm/test-lab-example.git
     ```
 
 2. **Navigate to the Project Folder**:
     - Change the directory to the project folder:
 
     ```bash
-    cd automation_example
+    cd test-lab-example
     ```
 
 3. **Build the Solution**:
