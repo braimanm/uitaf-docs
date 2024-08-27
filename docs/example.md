@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Test Automation Example
 
-This test automation example uses the UITAF open-source framework to perform UI testing on the Vehicle Insurance Quote minimalistic application located at [http://uitaf.org/test/](http://uitaf.org/test/). The test is executed using the Chrome browser and is supported only by Java 8.
+This test automation example uses the UITAF open-source framework to perform UI testing on the Vehicle Insurance Quote minimalistic application located at [http://uitaf.org/test/](http://uitaf.org/test/). The test is executed using the Chrome browser and is supported only by Java&nbsp;8.
 
 ## [Prerequisites](./getting_started/prerequsits)
 
@@ -52,7 +52,7 @@ To build and execute the test automation solution, follow these steps:
 
 ## Test Execution Details
 
-- The test will launch **five instances of the Chrome browser** and run **five different test cases in parallel**.
+- The test will launch **four instances of the Chrome browser** and run **four different test cases in parallel**.
 - Upon completion of the test execution, a detailed report with the results will be automatically launched in your default web browser.
 
 This example demonstrates how to set up, build, and execute a test automation project using UITAF to test a web application. The parallel execution of tests across multiple browser instances helps in efficiently validating the application under test.
