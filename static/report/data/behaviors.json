@@ -1,0 +1,70 @@
+{
+  "features" : [ {
+    "title" : "Insurance Policy",
+    "statistic" : {
+      "total" : 4,
+      "passed" : 4,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 0,
+      "broken" : 0
+    },
+    "stories" : [ {
+      "uid" : "412fe33b9c8863e2",
+      "title" : "User creates new insurance policy quote",
+      "statistic" : {
+        "total" : 4,
+        "passed" : 4,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "f94e9fbb26c31b8d",
+        "name" : "testCreatePolicy",
+        "title" : "Test create policy",
+        "time" : {
+          "start" : 1724780626645,
+          "stop" : 1724780633387,
+          "duration" : 6742
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "4b4a7cb29195dff4",
+        "name" : "testCreatePolicy",
+        "title" : "Test create policy",
+        "time" : {
+          "start" : 1724780626645,
+          "stop" : 1724780633364,
+          "duration" : 6719
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "b7233536dd2acc4f",
+        "name" : "testCreatePolicy",
+        "title" : "Test create policy",
+        "time" : {
+          "start" : 1724780626645,
+          "stop" : 1724780633754,
+          "duration" : 7109
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "daeb64fdf13db4f1",
+        "name" : "testCreatePolicy",
+        "title" : "Test create policy",
+        "time" : {
+          "start" : 1724780626645,
+          "stop" : 1724780633744,
+          "duration" : 7099
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    } ]
+  } ]
+}

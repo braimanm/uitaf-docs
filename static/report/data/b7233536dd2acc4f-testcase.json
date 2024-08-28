@@ -1,0 +1,872 @@
+{
+  "uid" : "b7233536dd2acc4f",
+  "name" : "testCreatePolicy",
+  "title" : "Test create policy",
+  "time" : {
+    "start" : 1724780626645,
+    "stop" : 1724780633754,
+    "duration" : 7109
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 53
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "ed84d1a253a41bc",
+    "name" : "Policy suite : Motorcycle Policy Creation",
+    "title" : "Policy suite : Motorcycle Policy Creation"
+  },
+  "steps" : [ {
+    "name" : "populate",
+    "title" : "Populate Vehicle Info form with provided data",
+    "time" : {
+      "start" : 1724780628575,
+      "stop" : 1724780630439,
+      "duration" : 1864
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 11
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "reportForAutoFill[Vehicle Type, Motorcycle]",
+      "title" : "Populate field \"Vehicle Type\" with value \"Motorcycle\"",
+      "time" : {
+        "start" : 1724780628812,
+        "stop" : 1724780628812,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Make, Honda]",
+      "title" : "Populate field \"Make\" with value \"Honda\"",
+      "time" : {
+        "start" : 1724780628996,
+        "stop" : 1724780628996,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Engine Performance, 67]",
+      "title" : "Populate field \"Engine Performance\" with value \"67\"",
+      "time" : {
+        "start" : 1724780629220,
+        "stop" : 1724780629220,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Manufacturer Date, 2024-01-10]",
+      "title" : "Populate field \"Manufacturer Date\" with value \"2024-01-10\"",
+      "time" : {
+        "start" : 1724780629372,
+        "stop" : 1724780629372,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Seats, 2]",
+      "title" : "Populate field \"Seats\" with value \"2\"",
+      "time" : {
+        "start" : 1724780629500,
+        "stop" : 1724780629500,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Fuel Type, Petrol]",
+      "title" : "Populate field \"Fuel Type\" with value \"Petrol\"",
+      "time" : {
+        "start" : 1724780629671,
+        "stop" : 1724780629671,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[List Price, 31500]",
+      "title" : "Populate field \"List Price\" with value \"31500\"",
+      "time" : {
+        "start" : 1724780629825,
+        "stop" : 1724780629825,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[License Plate, HAPPY1]",
+      "title" : "Populate field \"License Plate\" with value \"HAPPY1\"",
+      "time" : {
+        "start" : 1724780630002,
+        "stop" : 1724780630002,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Annual Mileage, 20000]",
+      "title" : "Populate field \"Annual Mileage\" with value \"20000\"",
+      "time" : {
+        "start" : 1724780630138,
+        "stop" : 1724780630138,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Model, Gold Wing DCT]",
+      "title" : "Populate field \"Model\" with value \"Gold Wing DCT\"",
+      "time" : {
+        "start" : 1724780630288,
+        "stop" : 1724780630288,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Cylinder Capacity, 1833]",
+      "title" : "Populate field \"Cylinder Capacity\" with value \"1833\"",
+      "time" : {
+        "start" : 1724780630439,
+        "stop" : 1724780630439,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "next",
+    "title" : "Click Submit Button",
+    "time" : {
+      "start" : 1724780630440,
+      "stop" : 1724780630506,
+      "duration" : 66
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "populate",
+    "title" : "Populate Client Info form with provided data",
+    "time" : {
+      "start" : 1724780630510,
+      "stop" : 1724780632319,
+      "duration" : 1809
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 12
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "reportForAutoFill[First Name, Robert]",
+      "title" : "Populate field \"First Name\" with value \"Robert\"",
+      "time" : {
+        "start" : 1724780630656,
+        "stop" : 1724780630656,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Last Name, Taylor]",
+      "title" : "Populate field \"Last Name\" with value \"Taylor\"",
+      "time" : {
+        "start" : 1724780630783,
+        "stop" : 1724780630783,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Date Of Birth, 1967-05-05]",
+      "title" : "Populate field \"Date Of Birth\" with value \"1967-05-05\"",
+      "time" : {
+        "start" : 1724780630905,
+        "stop" : 1724780630905,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Gender, Male]",
+      "title" : "Populate field \"Gender\" with value \"Male\"",
+      "time" : {
+        "start" : 1724780631078,
+        "stop" : 1724780631078,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Street Address, 34500 14th Street]",
+      "title" : "Populate field \"Street Address\" with value \"34500 14th Street\"",
+      "time" : {
+        "start" : 1724780631222,
+        "stop" : 1724780631222,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Country, USA]",
+      "title" : "Populate field \"Country\" with value \"USA\"",
+      "time" : {
+        "start" : 1724780631367,
+        "stop" : 1724780631367,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Zip Code, 10010]",
+      "title" : "Populate field \"Zip Code\" with value \"10010\"",
+      "time" : {
+        "start" : 1724780631521,
+        "stop" : 1724780631521,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[City, New York]",
+      "title" : "Populate field \"City\" with value \"New York\"",
+      "time" : {
+        "start" : 1724780631675,
+        "stop" : 1724780631675,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Occupation, Test Automation Architect]",
+      "title" : "Populate field \"Occupation\" with value \"Test Automation Architect\"",
+      "time" : {
+        "start" : 1724780631840,
+        "stop" : 1724780631840,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Hobbies, Hiking]",
+      "title" : "Populate field \"Hobbies\" with value \"Hiking\"",
+      "time" : {
+        "start" : 1724780632002,
+        "stop" : 1724780632002,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Website, www.softarch.org]",
+      "title" : "Populate field \"Website\" with value \"www.softarch.org\"",
+      "time" : {
+        "start" : 1724780632177,
+        "stop" : 1724780632177,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Picture, data/face.png]",
+      "title" : "Populate field \"Picture\" with value \"data/face.png\"",
+      "time" : {
+        "start" : 1724780632319,
+        "stop" : 1724780632319,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "submit",
+    "title" : "Click Submit Button",
+    "time" : {
+      "start" : 1724780632319,
+      "stop" : 1724780632433,
+      "duration" : 114
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "validate",
+    "title" : "Validate Summary Page",
+    "time" : {
+      "start" : 1724780632443,
+      "stop" : 1724780633754,
+      "duration" : 1311
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 25
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "reportForValidation[vehicleType, Motorcycle]",
+      "title" : "Validate that the \"vehicleType\" field has the value \"Motorcycle\"",
+      "time" : {
+        "start" : 1724780632444,
+        "stop" : 1724780632444,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[make, Honda]",
+      "title" : "Validate that the \"make\" field has the value \"Honda\"",
+      "time" : {
+        "start" : 1724780632526,
+        "stop" : 1724780632526,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[enginePerformance, 67]",
+      "title" : "Validate that the \"enginePerformance\" field has the value \"67\"",
+      "time" : {
+        "start" : 1724780632586,
+        "stop" : 1724780632586,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[manufacturerDate, 2024-01-10]",
+      "title" : "Validate that the \"manufacturerDate\" field has the value \"2024-01-10\"",
+      "time" : {
+        "start" : 1724780632648,
+        "stop" : 1724780632648,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[seats, 2]",
+      "title" : "Validate that the \"seats\" field has the value \"2\"",
+      "time" : {
+        "start" : 1724780632714,
+        "stop" : 1724780632714,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[fuelType, Petrol]",
+      "title" : "Validate that the \"fuelType\" field has the value \"Petrol\"",
+      "time" : {
+        "start" : 1724780632776,
+        "stop" : 1724780632776,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[listPrice, 31500]",
+      "title" : "Validate that the \"listPrice\" field has the value \"31500\"",
+      "time" : {
+        "start" : 1724780632829,
+        "stop" : 1724780632829,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[licensePlate, HAPPY1]",
+      "title" : "Validate that the \"licensePlate\" field has the value \"HAPPY1\"",
+      "time" : {
+        "start" : 1724780632889,
+        "stop" : 1724780632889,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[annualMileage, 20000]",
+      "title" : "Validate that the \"annualMileage\" field has the value \"20000\"",
+      "time" : {
+        "start" : 1724780632942,
+        "stop" : 1724780632942,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "validateFieldIsNotDisplayed[payload, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@75d271eb]",
+      "title" : "Validate that the \"payload\" field is hidden",
+      "time" : {
+        "start" : 1724780632993,
+        "stop" : 1724780633001,
+        "duration" : 8
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "validateFieldIsNotDisplayed[totalWeight, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@2584ba92]",
+      "title" : "Validate that the \"totalWeight\" field is hidden",
+      "time" : {
+        "start" : 1724780633001,
+        "stop" : 1724780633009,
+        "duration" : 8
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[model, Gold Wing DCT]",
+      "title" : "Validate that the \"model\" field has the value \"Gold Wing DCT\"",
+      "time" : {
+        "start" : 1724780633009,
+        "stop" : 1724780633009,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[cylinderCapacity, 1833]",
+      "title" : "Validate that the \"cylinderCapacity\" field has the value \"1833\"",
+      "time" : {
+        "start" : 1724780633060,
+        "stop" : 1724780633060,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[firstName, Robert]",
+      "title" : "Validate that the \"firstName\" field has the value \"Robert\"",
+      "time" : {
+        "start" : 1724780633114,
+        "stop" : 1724780633114,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[lastName, Taylor]",
+      "title" : "Validate that the \"lastName\" field has the value \"Taylor\"",
+      "time" : {
+        "start" : 1724780633167,
+        "stop" : 1724780633167,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[dateOfBirth, 1967-05-05]",
+      "title" : "Validate that the \"dateOfBirth\" field has the value \"1967-05-05\"",
+      "time" : {
+        "start" : 1724780633220,
+        "stop" : 1724780633220,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[gender, Male]",
+      "title" : "Validate that the \"gender\" field has the value \"Male\"",
+      "time" : {
+        "start" : 1724780633269,
+        "stop" : 1724780633269,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[streetAddress, 34500 14th Street]",
+      "title" : "Validate that the \"streetAddress\" field has the value \"34500 14th Street\"",
+      "time" : {
+        "start" : 1724780633319,
+        "stop" : 1724780633319,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[country, USA]",
+      "title" : "Validate that the \"country\" field has the value \"USA\"",
+      "time" : {
+        "start" : 1724780633393,
+        "stop" : 1724780633393,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[zipCode, 10010]",
+      "title" : "Validate that the \"zipCode\" field has the value \"10010\"",
+      "time" : {
+        "start" : 1724780633444,
+        "stop" : 1724780633444,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[city, New York]",
+      "title" : "Validate that the \"city\" field has the value \"New York\"",
+      "time" : {
+        "start" : 1724780633497,
+        "stop" : 1724780633497,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[occupation, Test Automation Architect]",
+      "title" : "Validate that the \"occupation\" field has the value \"Test Automation Architect\"",
+      "time" : {
+        "start" : 1724780633544,
+        "stop" : 1724780633544,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[hobbies, Hiking]",
+      "title" : "Validate that the \"hobbies\" field has the value \"Hiking\"",
+      "time" : {
+        "start" : 1724780633594,
+        "stop" : 1724780633594,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[website, www.softarch.org]",
+      "title" : "Validate that the \"website\" field has the value \"www.softarch.org\"",
+      "time" : {
+        "start" : 1724780633649,
+        "stop" : 1724780633649,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[picture, face.png]",
+      "title" : "Validate that the \"picture\" field has the value \"face.png\"",
+      "time" : {
+        "start" : 1724780633701,
+        "stop" : 1724780633701,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  } ],
+  "attachments" : [ {
+    "title" : "data/motorcycle-data.xml",
+    "source" : "a22a59a3-3924-4c25-9401-b196af38e663-attachment.xml",
+    "type" : "text/xml",
+    "size" : 1930,
+    "uid" : "2b9575e577d8f1cc"
+  }, {
+    "title" : "Global Aliases : data/motorcycle-data.xml",
+    "source" : "22a92932-c965-4a03-b922-3294fe9e2c52-attachment.xml",
+    "type" : "text/xml",
+    "size" : 862,
+    "uid" : "7f994ad4017825a4"
+  } ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "Michaels-MBP-2.localdomain"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testMethod",
+    "value" : "testCreatePolicy"
+  }, {
+    "name" : "suite-name",
+    "value" : "Policy suite : Motorcycle Policy Creation"
+  }, {
+    "name" : "testGroup",
+    "value" : "Motorcycle Policy Creation"
+  }, {
+    "name" : "feature",
+    "value" : "Insurance Policy"
+  }, {
+    "name" : "suite-title",
+    "value" : "Policy suite : Motorcycle Policy Creation"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "thread",
+    "value" : "22494@Michaels-MBP-2.localdomain.TestNG-tests-3(14)"
+  }, {
+    "name" : "testSuite",
+    "value" : "Policy suite"
+  }, {
+    "name" : "testClass",
+    "value" : "com.yourcompany.example.tests.TestInsurancePolicy"
+  }, {
+    "name" : "story",
+    "value" : "User creates new insurance policy quote"
+  } ],
+  "parameters" : [ ]
+}

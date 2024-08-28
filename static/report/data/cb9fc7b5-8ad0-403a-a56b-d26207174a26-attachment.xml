@@ -1,0 +1,28 @@
+<datainstiller.data.DataAliases>
+  <lastName>Marlatt</lastName>
+  <country>CANADA</country>
+  <zipCode>B0K 1H0</zipCode>
+  <occupation>Teacher</occupation>
+  <gender>Male</gender>
+  <city>Pictou</city>
+  <seats>6</seats>
+  <enginePerformance>294</enginePerformance>
+  <licensePlate>KRIY-287</licensePlate>
+  <payload></payload>
+  <model></model>
+  <make>Renault</make>
+  <vehicleType>Automobile</vehicleType>
+  <annualMileage>51541</annualMileage>
+  <website>https://arrangementround.com</website>
+  <address>Country: CANADA, Street #: 33280, Street Name: St. Peter, City: Pictou, Province Name: Nova Scotia, Province Code: NS, Postal Code: B0K 1H0</address>
+  <manufacturerDate>2015-01-23</manufacturerDate>
+  <dateOfBirth>1987-05-24</dateOfBirth>
+  <cylinderCapacity></cylinderCapacity>
+  <url>https://uitaf.org/test/</url>
+  <firstName>Arnold</firstName>
+  <fuelType>Electric Power</fuelType>
+  <streetAddress>33280 St. Peter</streetAddress>
+  <hobbies>Cooking</hobbies>
+  <totalWeight></totalWeight>
+  <listPrice>61348</listPrice>
+</datainstiller.data.DataAliases>

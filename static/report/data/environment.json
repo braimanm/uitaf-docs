@@ -1,0 +1,70 @@
+{
+  "id" : "d3f3ffde-2c76-4bad-a6de-4a07c29e28aa",
+  "name" : "Environment",
+  "url" : null,
+  "parameter" : [ {
+    "name" : "test.env.name",
+    "key" : "test.env.name",
+    "value" : "prod"
+  }, {
+    "name" : "test.env.url",
+    "key" : "test.env.url",
+    "value" : "https://uitaf.org/test/"
+  }, {
+    "name" : "report.port",
+    "key" : "report.port",
+    "value" : "8090"
+  }, {
+    "name" : "report.show",
+    "key" : "report.show",
+    "value" : "true"
+  }, {
+    "name" : "webdriver.remote.url",
+    "key" : "webdriver.remote.url",
+    "value" : ""
+  }, {
+    "name" : "driver.provider",
+    "key" : "driver.provider",
+    "value" : "ui.auto.core.support.DefaultDriverProvider@6f204a1a"
+  }, {
+    "name" : "webdriver.browser.type",
+    "key" : "webdriver.browser.type",
+    "value" : "CHROME"
+  }, {
+    "name" : "webdriver.headless",
+    "key" : "webdriver.headless",
+    "value" : "false"
+  }, {
+    "name" : "webdriver.screen.size",
+    "key" : "webdriver.screen.size",
+    "value" : "1280x800"
+  }, {
+    "name" : "timeout.page",
+    "key" : "timeout.page",
+    "value" : "30"
+  }, {
+    "name" : "timeout.element",
+    "key" : "timeout.element",
+    "value" : "30"
+  }, {
+    "name" : "test.suites",
+    "key" : "test.suites",
+    "value" : "suites/suite.xml"
+  }, {
+    "name" : "test.parallel.threads",
+    "key" : "test.parallel.threads",
+    "value" : ""
+  }, {
+    "name" : "test.default.retry",
+    "key" : "test.default.retry",
+    "value" : "2"
+  }, {
+    "name" : "webdriver.install",
+    "key" : "webdriver.install",
+    "value" : "true"
+  }, {
+    "name" : "webdriver.drivers.to.install",
+    "key" : "webdriver.drivers.to.install",
+    "value" : "CHROME"
+  } ]
+}

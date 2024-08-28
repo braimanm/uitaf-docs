@@ -1,0 +1,8 @@
+{
+  "label": "Automation Example",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "test_lab/example"
+  }
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicle-insurance-domain-object>
+  
+  <appUrl>https://uitaf.org/test/</appUrl>
+  <vehicleInfoPO>
+    <vehicleType>Motorcycle</vehicleType>
+    <make>Honda</make>
+    <enginePerformance>67</enginePerformance>
+    <manufacturerDate>2024-01-10</manufacturerDate>
+    <seats>2</seats>
+    <fuelType>Petrol</fuelType>
+    <listPrice>31500</listPrice>
+    <licensePlate>HAPPY1</licensePlate>
+    <annualMileage>20000</annualMileage>
+    <model>Gold Wing DCT</model>
+    <cylinderCapacity>1833</cylinderCapacity>
+  </vehicleInfoPO>
+  <clientInfoPO>
+    <firstName>Robert</firstName>
+    <lastName>Taylor</lastName>
+    <dateOfBirth>1967-05-05</dateOfBirth>
+    <gender>Male</gender>
+    <streetAddress>34500 14th Street</streetAddress>
+    <country>USA</country>
+    <zipCode>10010</zipCode>
+    <city>New York</city>
+    <occupation>Test Automation Architect</occupation>
+    <hobbies>Hiking</hobbies>
+    <website>www.softarch.org</website>
+    <picture>data/face.png</picture>
+  </clientInfoPO>
+  <summaryPO>
+    <vehicleType>Motorcycle</vehicleType>
+    <make>Honda</make>
+    <enginePerformance>67</enginePerformance>
+    <manufacturerDate>2024-01-10</manufacturerDate>
+    <seats>2</seats>
+    <fuelType>Petrol</fuelType>
+    <listPrice>31500</listPrice>
+    <licensePlate>HAPPY1</licensePlate>
+    <annualMileage>20000</annualMileage>
+    <model>Gold Wing DCT</model>
+    <cylinderCapacity>1833</cylinderCapacity>
+    <firstName>Robert</firstName>
+    <lastName>Taylor</lastName>
+    <dateOfBirth>1967-05-05</dateOfBirth>
+    <gender>Male</gender>
+    <streetAddress>34500 14th Street</streetAddress>
+    <country>USA</country>
+    <zipCode>10010</zipCode>
+    <city>New York</city>
+    <occupation>Test Automation Architect</occupation>
+    <hobbies>Hiking</hobbies>
+    <website>www.softarch.org</website>
+    <picture>face.png</picture>
+  </summaryPO>
+</vehicle-insurance-domain-object>

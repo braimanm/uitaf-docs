@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicle-insurance-domain-object>
+  
+  <appUrl>https://uitaf.org/test/</appUrl>
+  <vehicleInfoPO>
+    <vehicleType>Automobile</vehicleType>
+    <make>Renault</make>
+    <enginePerformance>294</enginePerformance>
+    <manufacturerDate>2015-01-23</manufacturerDate>
+    <seats>6</seats>
+    <fuelType>Electric Power</fuelType>
+    <listPrice>61348</listPrice>
+    <licensePlate>KRIY-287</licensePlate>
+    <annualMileage>51541</annualMileage>
+    <payload></payload>
+    <totalWeight></totalWeight>
+    <model></model>
+    <cylinderCapacity></cylinderCapacity>
+  </vehicleInfoPO>
+  <clientInfoPO>
+    <firstName>Arnold</firstName>
+    <lastName>Marlatt</lastName>
+    <dateOfBirth>1987-05-24</dateOfBirth>
+    <gender>Male</gender>
+    <streetAddress>33280 St. Peter</streetAddress>
+    <country>CANADA</country>
+    <zipCode>B0K 1H0</zipCode>
+    <city>Pictou</city>
+    <occupation>Teacher</occupation>
+    <hobbies>Cooking</hobbies>
+    <website>https://arrangementround.com</website>
+    <picture>data/face.png</picture>
+  </clientInfoPO>
+  <summaryPO>
+    <vehicleType>Automobile</vehicleType>
+    <make>Renault</make>
+    <enginePerformance>294</enginePerformance>
+    <manufacturerDate>2015-01-23</manufacturerDate>
+    <seats>6</seats>
+    <fuelType>Electric Power</fuelType>
+    <listPrice>61348</listPrice>
+    <licensePlate>KRIY-287</licensePlate>
+    <annualMileage>51541</annualMileage>
+    <payload></payload>
+    <totalWeight></totalWeight>
+    <model></model>
+    <cylinderCapacity></cylinderCapacity>
+    <firstName>Arnold</firstName>
+    <lastName>Marlatt</lastName>
+    <dateOfBirth>1987-05-24</dateOfBirth>
+    <gender>Male</gender>
+    <streetAddress>33280 St. Peter</streetAddress>
+    <country>CANADA</country>
+    <zipCode>B0K 1H0</zipCode>
+    <city>Pictou</city>
+    <occupation>Teacher</occupation>
+    <hobbies>Cooking</hobbies>
+    <website>https://arrangementround.com</website>
+    <picture>face.png</picture>
+  </summaryPO>
+</vehicle-insurance-domain-object>

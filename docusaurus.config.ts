@@ -68,7 +68,7 @@ const config: Config = {
       },
       items: [
         {
-          to: './test',
+          to: './test/',
           label: 'Test Lab',
           position: 'left',
           target: '_blank',
@@ -87,8 +87,9 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Michael Braiman creator of UITAF, Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.oneLight,
+      darkTheme: prismThemes.oneDark,
+      additionalLanguages: ['Bash', 'Java', 'PHP'],
     },
   } satisfies Preset.ThemeConfig,
 };

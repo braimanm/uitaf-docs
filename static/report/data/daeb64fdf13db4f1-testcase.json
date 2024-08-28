@@ -1,0 +1,872 @@
+{
+  "uid" : "daeb64fdf13db4f1",
+  "name" : "testCreatePolicy",
+  "title" : "Test create policy",
+  "time" : {
+    "start" : 1724780626645,
+    "stop" : 1724780633744,
+    "duration" : 7099
+  },
+  "summary" : {
+    "attachments" : 2,
+    "steps" : 53
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "2a09a083e0664534",
+    "name" : "Policy suite : Truck Policy Creation",
+    "title" : "Policy suite : Truck Policy Creation"
+  },
+  "steps" : [ {
+    "name" : "populate",
+    "title" : "Populate Vehicle Info form with provided data",
+    "time" : {
+      "start" : 1724780628575,
+      "stop" : 1724780630471,
+      "duration" : 1896
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 11
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "reportForAutoFill[Vehicle Type, Truck]",
+      "title" : "Populate field \"Vehicle Type\" with value \"Truck\"",
+      "time" : {
+        "start" : 1724780628807,
+        "stop" : 1724780628807,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Make, Volvo]",
+      "title" : "Populate field \"Make\" with value \"Volvo\"",
+      "time" : {
+        "start" : 1724780629056,
+        "stop" : 1724780629056,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Engine Performance, 336]",
+      "title" : "Populate field \"Engine Performance\" with value \"336\"",
+      "time" : {
+        "start" : 1724780629239,
+        "stop" : 1724780629239,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Manufacturer Date, 2020-08-05]",
+      "title" : "Populate field \"Manufacturer Date\" with value \"2020-08-05\"",
+      "time" : {
+        "start" : 1724780629372,
+        "stop" : 1724780629372,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Seats, 2]",
+      "title" : "Populate field \"Seats\" with value \"2\"",
+      "time" : {
+        "start" : 1724780629506,
+        "stop" : 1724780629506,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Fuel Type, Diesel]",
+      "title" : "Populate field \"Fuel Type\" with value \"Diesel\"",
+      "time" : {
+        "start" : 1724780629687,
+        "stop" : 1724780629687,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[List Price, 120000]",
+      "title" : "Populate field \"List Price\" with value \"120000\"",
+      "time" : {
+        "start" : 1724780629870,
+        "stop" : 1724780629870,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[License Plate, BIG001]",
+      "title" : "Populate field \"License Plate\" with value \"BIG001\"",
+      "time" : {
+        "start" : 1724780630028,
+        "stop" : 1724780630028,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Annual Mileage, 100000]",
+      "title" : "Populate field \"Annual Mileage\" with value \"100000\"",
+      "time" : {
+        "start" : 1724780630172,
+        "stop" : 1724780630172,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Payload, 116450]",
+      "title" : "Populate field \"Payload\" with value \"116450\"",
+      "time" : {
+        "start" : 1724780630329,
+        "stop" : 1724780630329,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Total Weight, 125000]",
+      "title" : "Populate field \"Total Weight\" with value \"125000\"",
+      "time" : {
+        "start" : 1724780630471,
+        "stop" : 1724780630471,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "next",
+    "title" : "Click Submit Button",
+    "time" : {
+      "start" : 1724780630472,
+      "stop" : 1724780630539,
+      "duration" : 67
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "populate",
+    "title" : "Populate Client Info form with provided data",
+    "time" : {
+      "start" : 1724780630544,
+      "stop" : 1724780632380,
+      "duration" : 1836
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 12
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "reportForAutoFill[First Name, Emily]",
+      "title" : "Populate field \"First Name\" with value \"Emily\"",
+      "time" : {
+        "start" : 1724780630679,
+        "stop" : 1724780630679,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Last Name, Johnson]",
+      "title" : "Populate field \"Last Name\" with value \"Johnson\"",
+      "time" : {
+        "start" : 1724780630818,
+        "stop" : 1724780630818,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Date Of Birth, 1983-03-11]",
+      "title" : "Populate field \"Date Of Birth\" with value \"1983-03-11\"",
+      "time" : {
+        "start" : 1724780630945,
+        "stop" : 1724780630945,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Gender, Female]",
+      "title" : "Populate field \"Gender\" with value \"Female\"",
+      "time" : {
+        "start" : 1724780631115,
+        "stop" : 1724780631115,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Street Address, 1200 Canyon Street]",
+      "title" : "Populate field \"Street Address\" with value \"1200 Canyon Street\"",
+      "time" : {
+        "start" : 1724780631266,
+        "stop" : 1724780631266,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Country, USA]",
+      "title" : "Populate field \"Country\" with value \"USA\"",
+      "time" : {
+        "start" : 1724780631407,
+        "stop" : 1724780631407,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Zip Code, 10010]",
+      "title" : "Populate field \"Zip Code\" with value \"10010\"",
+      "time" : {
+        "start" : 1724780631559,
+        "stop" : 1724780631559,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[City, New York]",
+      "title" : "Populate field \"City\" with value \"New York\"",
+      "time" : {
+        "start" : 1724780631723,
+        "stop" : 1724780631723,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Occupation, Truck Driver]",
+      "title" : "Populate field \"Occupation\" with value \"Truck Driver\"",
+      "time" : {
+        "start" : 1724780631889,
+        "stop" : 1724780631889,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Hobbies, Golf]",
+      "title" : "Populate field \"Hobbies\" with value \"Golf\"",
+      "time" : {
+        "start" : 1724780632048,
+        "stop" : 1724780632048,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Website, None]",
+      "title" : "Populate field \"Website\" with value \"None\"",
+      "time" : {
+        "start" : 1724780632218,
+        "stop" : 1724780632218,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Picture, data/face.png]",
+      "title" : "Populate field \"Picture\" with value \"data/face.png\"",
+      "time" : {
+        "start" : 1724780632380,
+        "stop" : 1724780632380,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  }, {
+    "name" : "submit",
+    "title" : "Click Submit Button",
+    "time" : {
+      "start" : 1724780632380,
+      "stop" : 1724780632473,
+      "duration" : 93
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "validate",
+    "title" : "Validate Summary Page",
+    "time" : {
+      "start" : 1724780632478,
+      "stop" : 1724780633744,
+      "duration" : 1266
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 25
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ {
+      "name" : "reportForValidation[vehicleType, Truck]",
+      "title" : "Validate that the \"vehicleType\" field has the value \"Truck\"",
+      "time" : {
+        "start" : 1724780632478,
+        "stop" : 1724780632478,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[make, Volvo]",
+      "title" : "Validate that the \"make\" field has the value \"Volvo\"",
+      "time" : {
+        "start" : 1724780632543,
+        "stop" : 1724780632543,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[enginePerformance, 336]",
+      "title" : "Validate that the \"enginePerformance\" field has the value \"336\"",
+      "time" : {
+        "start" : 1724780632598,
+        "stop" : 1724780632598,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[manufacturerDate, 2020-08-05]",
+      "title" : "Validate that the \"manufacturerDate\" field has the value \"2020-08-05\"",
+      "time" : {
+        "start" : 1724780632661,
+        "stop" : 1724780632661,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[seats, 2]",
+      "title" : "Validate that the \"seats\" field has the value \"2\"",
+      "time" : {
+        "start" : 1724780632735,
+        "stop" : 1724780632735,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[fuelType, Diesel]",
+      "title" : "Validate that the \"fuelType\" field has the value \"Diesel\"",
+      "time" : {
+        "start" : 1724780632792,
+        "stop" : 1724780632792,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[listPrice, 120000]",
+      "title" : "Validate that the \"listPrice\" field has the value \"120000\"",
+      "time" : {
+        "start" : 1724780632848,
+        "stop" : 1724780632848,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[licensePlate, BIG001]",
+      "title" : "Validate that the \"licensePlate\" field has the value \"BIG001\"",
+      "time" : {
+        "start" : 1724780632904,
+        "stop" : 1724780632904,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[annualMileage, 100000]",
+      "title" : "Validate that the \"annualMileage\" field has the value \"100000\"",
+      "time" : {
+        "start" : 1724780632959,
+        "stop" : 1724780632959,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[payload, 116450]",
+      "title" : "Validate that the \"payload\" field has the value \"116450\"",
+      "time" : {
+        "start" : 1724780633012,
+        "stop" : 1724780633012,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[totalWeight, 125000]",
+      "title" : "Validate that the \"totalWeight\" field has the value \"125000\"",
+      "time" : {
+        "start" : 1724780633063,
+        "stop" : 1724780633063,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "validateFieldIsNotDisplayed[model, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@4d31d6d3]",
+      "title" : "Validate that the \"model\" field is hidden",
+      "time" : {
+        "start" : 1724780633114,
+        "stop" : 1724780633121,
+        "duration" : 7
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "validateFieldIsNotDisplayed[cylinderCapacity, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@57076b5e]",
+      "title" : "Validate that the \"cylinderCapacity\" field is hidden",
+      "time" : {
+        "start" : 1724780633122,
+        "stop" : 1724780633130,
+        "duration" : 8
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[firstName, Emily]",
+      "title" : "Validate that the \"firstName\" field has the value \"Emily\"",
+      "time" : {
+        "start" : 1724780633130,
+        "stop" : 1724780633131,
+        "duration" : 1
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[lastName, Johnson]",
+      "title" : "Validate that the \"lastName\" field has the value \"Johnson\"",
+      "time" : {
+        "start" : 1724780633183,
+        "stop" : 1724780633183,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[dateOfBirth, 1983-03-11]",
+      "title" : "Validate that the \"dateOfBirth\" field has the value \"1983-03-11\"",
+      "time" : {
+        "start" : 1724780633234,
+        "stop" : 1724780633234,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[gender, Female]",
+      "title" : "Validate that the \"gender\" field has the value \"Female\"",
+      "time" : {
+        "start" : 1724780633285,
+        "stop" : 1724780633285,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[streetAddress, 1200 Canyon Street]",
+      "title" : "Validate that the \"streetAddress\" field has the value \"1200 Canyon Street\"",
+      "time" : {
+        "start" : 1724780633333,
+        "stop" : 1724780633333,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[country, USA]",
+      "title" : "Validate that the \"country\" field has the value \"USA\"",
+      "time" : {
+        "start" : 1724780633400,
+        "stop" : 1724780633400,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[zipCode, 10010]",
+      "title" : "Validate that the \"zipCode\" field has the value \"10010\"",
+      "time" : {
+        "start" : 1724780633444,
+        "stop" : 1724780633444,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[city, New York]",
+      "title" : "Validate that the \"city\" field has the value \"New York\"",
+      "time" : {
+        "start" : 1724780633497,
+        "stop" : 1724780633497,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[occupation, Truck Driver]",
+      "title" : "Validate that the \"occupation\" field has the value \"Truck Driver\"",
+      "time" : {
+        "start" : 1724780633546,
+        "stop" : 1724780633546,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[hobbies, Golf]",
+      "title" : "Validate that the \"hobbies\" field has the value \"Golf\"",
+      "time" : {
+        "start" : 1724780633596,
+        "stop" : 1724780633596,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[website, None]",
+      "title" : "Validate that the \"website\" field has the value \"None\"",
+      "time" : {
+        "start" : 1724780633646,
+        "stop" : 1724780633646,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForValidation[picture, face.png]",
+      "title" : "Validate that the \"picture\" field has the value \"face.png\"",
+      "time" : {
+        "start" : 1724780633696,
+        "stop" : 1724780633696,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    } ]
+  } ],
+  "attachments" : [ {
+    "title" : "data/truck-data.xml",
+    "source" : "150e026d-1824-4f69-a76c-82ce4a6eb57c-attachment.xml",
+    "type" : "text/xml",
+    "size" : 1856,
+    "uid" : "b3638b843a8796cc"
+  }, {
+    "title" : "Global Aliases : data/truck-data.xml",
+    "source" : "1ec9f908-02f2-4715-b577-cee8e67db07d-attachment.xml",
+    "type" : "text/xml",
+    "size" : 825,
+    "uid" : "ad0dd8616902e64e"
+  } ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "suite-title",
+    "value" : "Policy suite : Truck Policy Creation"
+  }, {
+    "name" : "host",
+    "value" : "my.localdomain"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testMethod",
+    "value" : "testCreatePolicy"
+  }, {
+    "name" : "feature",
+    "value" : "Insurance Policy"
+  }, {
+    "name" : "thread",
+    "value" : "22494@my.localdomain.TestNG-tests-2(13)"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "suite-name",
+    "value" : "Policy suite : Truck Policy Creation"
+  }, {
+    "name" : "testGroup",
+    "value" : "Truck Policy Creation"
+  }, {
+    "name" : "testSuite",
+    "value" : "Policy suite"
+  }, {
+    "name" : "testClass",
+    "value" : "com.yourcompany.example.tests.TestInsurancePolicy"
+  }, {
+    "name" : "story",
+    "value" : "User creates new insurance policy quote"
+  } ],
+  "parameters" : [ ]
+}

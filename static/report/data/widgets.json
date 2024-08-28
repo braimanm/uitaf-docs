@@ -1,0 +1,135 @@
+{
+  "hash" : "e7105c43ada45c9f6e0006854ef1a1d95249231d",
+  "plugins" : {
+    "total" : {
+      "statistic" : {
+        "total" : 4,
+        "passed" : 4,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "time" : {
+        "start" : 1724780626645,
+        "stop" : 1724780633754,
+        "duration" : 7109
+      }
+    },
+    "defects" : {
+      "totalCount" : 0,
+      "items" : [ ]
+    },
+    "xunit" : {
+      "totalCount" : 4,
+      "items" : [ {
+        "uid" : "5deed516dbea4784",
+        "title" : "Policy suite : Automobile Policy Creation",
+        "statistic" : {
+          "total" : 1,
+          "passed" : 1,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 0,
+          "broken" : 0
+        }
+      }, {
+        "uid" : "ed84d1a253a41bc",
+        "title" : "Policy suite : Motorcycle Policy Creation",
+        "statistic" : {
+          "total" : 1,
+          "passed" : 1,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 0,
+          "broken" : 0
+        }
+      }, {
+        "uid" : "1e832f830d7fadfa",
+        "title" : "Policy suite : Random Policy Creation",
+        "statistic" : {
+          "total" : 1,
+          "passed" : 1,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 0,
+          "broken" : 0
+        }
+      }, {
+        "uid" : "2a09a083e0664534",
+        "title" : "Policy suite : Truck Policy Creation",
+        "statistic" : {
+          "total" : 1,
+          "passed" : 1,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 0,
+          "broken" : 0
+        }
+      } ]
+    },
+    "behaviors" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "title" : "Insurance Policy",
+        "statistic" : {
+          "total" : 4,
+          "passed" : 4,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 0,
+          "broken" : 0
+        }
+      } ]
+    },
+    "environment" : [ {
+      "key" : "driver.provider",
+      "value" : "ui.auto.core.support.DefaultDriverProvider@6f204a1a"
+    }, {
+      "key" : "report.port",
+      "value" : "8090"
+    }, {
+      "key" : "report.show",
+      "value" : "true"
+    }, {
+      "key" : "test.default.retry",
+      "value" : "2"
+    }, {
+      "key" : "test.env.name",
+      "value" : "prod"
+    }, {
+      "key" : "test.env.url",
+      "value" : "https://uitaf.org/test/"
+    }, {
+      "key" : "test.parallel.threads",
+      "value" : ""
+    }, {
+      "key" : "test.suites",
+      "value" : "suites/suite.xml"
+    }, {
+      "key" : "timeout.element",
+      "value" : "30"
+    }, {
+      "key" : "timeout.page",
+      "value" : "30"
+    }, {
+      "key" : "webdriver.browser.type",
+      "value" : "CHROME"
+    }, {
+      "key" : "webdriver.drivers.to.install",
+      "value" : "CHROME"
+    }, {
+      "key" : "webdriver.headless",
+      "value" : "false"
+    }, {
+      "key" : "webdriver.install",
+      "value" : "true"
+    }, {
+      "key" : "webdriver.remote.url",
+      "value" : ""
+    }, {
+      "key" : "webdriver.screen.size",
+      "value" : "1280x800"
+    } ]
+  }
+}
