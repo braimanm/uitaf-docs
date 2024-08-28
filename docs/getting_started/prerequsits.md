@@ -26,4 +26,8 @@ To effectively utilize UITAF for your test automation projects, ensure that your
 
     - **Git:** Although optional, it is highly recommended to use a version control system like Git for managing your UITAF-based test projects. This allows for better collaboration, version tracking, and code management. Ensure that Git is installed and configured on your machine if you plan to collaborate on UITAF projects or contribute to the UITAF repository.
 
+:::info
+
 By ensuring that these prerequisites are met, you will be well-equipped to leverage UITAF’s capabilities to streamline and enhance your test automation efforts. Proper setup of your development environment will facilitate a smoother, more efficient workflow, allowing you to focus on building robust and scalable test solutions.
+
+:::

@@ -42,9 +42,15 @@ The environments.xml file typically includes:
 </setup>
 ```
 
-## **Key Points:**
+:::warning
 
 - **Consistency:** Ensure that the user roles and credentials are consistent across all environments. This allows you to run the same tests with specific user roles in different environments without modifying the test code.
 
-- **Flexibility:** By defining multiple environments and their configurations, you can easily switch between different test setups, making your testing process more flexible and manageable.
-The environments.xml file helps maintain a structured and organized approach to managing test environments, facilitating smoother test execution and management.
+:::
+
+:::info
+
+- **Flexibility:** By defining multiple environments and their configurations, you can easily switch between different environments, making your testing process more flexible and manageable.
+The **environments.xml** file helps maintain a structured and organized approach to managing those environments.
+
+:::

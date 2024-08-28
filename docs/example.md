@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Test Automation Example
@@ -55,4 +55,8 @@ To build and execute the test automation solution, follow these steps:
 - The test will launch **four instances of the Chrome browser** and run **four different test cases in parallel**.
 - Upon completion of the test execution, a detailed report with the results will be automatically launched in your default web browser.
 
-This example demonstrates how to set up, build, and execute a test automation project using UITAF to test a web application. Parallel execution of tests across multiple browser instances helps to reduce overall execution time and quickly validate the application under test.
+:::info
+
+This example demonstrates how to set up, build, and execute a test automation project using UITAF to test a web application. UITAF also introduces parallel execution of tests across multiple browser instances, which helps to reduce overall execution time and quickly validate the application under test.
+
+:::

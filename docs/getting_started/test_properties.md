@@ -60,8 +60,15 @@ report.show=true
 test.default.retry=2
 ```
 
-**Important Note**
+:::warning
+
 The test.properties file includes only predefined parameters and will not accept any additional arbitrary parameters entered. This ensures that only recognized and valid configurations are applied during test execution.
+
+:::info
+
+There is a way to add additional parameters, but it involves overwriting the ui.auto.core.support.TestProperties.java file in your project by recreating its package structure. By doing so, Maven will override the original file with your version of the same file.
+
+:::
 
 ## Test Properties Parameters
 
