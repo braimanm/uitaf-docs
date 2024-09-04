@@ -94,9 +94,11 @@ The populated data can undergo mutation, where the input value is provided in on
 
 In a custom Page Component, if you need to retrieve and utilize these data types, you should use the UITAF Page Component’s **getData(DataTypes)** method. The DataTypes enum provides the necessary values:
 
-- For Initial data, use **getData(DataTypes.Initial)**.
-- For Expected data, use **getData(DataTypes.Expected)**.
-- To retrieve the actual data in a custom Page Component, you can use the **getData(DataTypes.Data)** method. Alternatively, you can use the method without arguments by calling **getData()**.
+```java
+String initialValue = getData(DataTypes.Initial);// - For initial Data
+String expectedValue = getData(DataTypes.Expected);// - For Expected Data
+String dataValue = getData(DataType.Data); //Or getData() - For Data  
+```
 
 There is also an overloaded version of the getData(String) method, which can be used to retrieve arbitrary attributes in addition to the standard data types. For example, you can use this method to access custom attributes not covered by the **DataTypes** enum. Here’s how it can be utilized:
 
