@@ -242,9 +242,9 @@ The final POM, which represents the Summary page, includes relevant page compone
 
 ### Vehicle Insurance Domain Object Model
 
-The Domain Object Model (DOM) is a design pattern introduced by UITAF to provide business-oriented methods or Domain-Specific Language (DSL). It is also used for consolidating multiple POMs for aggregation. In our business scenario, we need to validate a business-specific activity referred to by stakeholders as “Create New Insurance Policy.” This involves validating different scenarious, such as creating vehicle insurance for automobiles, trucks, and motorcycles.
+The Domain Object model (DO) is a design pattern introduced by UITAF to provide business-oriented methods or Domain-Specific Language (DSL). It is also used for consolidating multiple POMs for aggregation. In our business scenario, we need to validate a business-specific activity referred to by stakeholders as “Create New Insurance Policy.” This involves validating different scenarious, such as creating vehicle insurance for automobiles, trucks, and motorcycles.
 
-To handle this, we will create a VehicleInsuranceDO DOM. The DOM is a Java class with fields representing the POMs that are part of the common business transaction. Each vehicle type requires different scenarios and data to validate various possibilities, making the VehicleInsuranceDO DOM essential for managing these validations effectively.
+To handle this, we will create a VehicleInsuranceDO. The Domain Object is a Java class with fields representing the POMs that are part of the common business transaction. Each vehicle type requires different scenarios and data to validate various possibilities, making the VehicleInsuranceDO essential for managing these validations effectively.
 
 ```java title='VehicleInsuranceDO.java'
 package com.yourcompany.example.domainobjects;
@@ -287,10 +287,10 @@ public class VehicleInsuranceDO extends DomainObjectModel {
 }
 ```
 
-Method breakdown for vehicleInsuranceDO DOM:
+Method breakdown for vehicleInsuranceDO:
 
 
-- **VehicleInsuranceDO(TestContext context) Constructor:** This constructor initializes the DOM with the provided context, which represents the browser instance (Selenium WebDriver) and various properties needed to run the test.
+- **VehicleInsuranceDO(TestContext context) Constructor:** This constructor initializes the Domain Object with the provided context, which represents the browser instance (Selenium WebDriver) and various properties needed to run the test.
 
 :::danger
 If any non-default constructors are declared, the empty default constructor should be declared as well. If the default constructor is not used anywhere, it can be declared with the private modifier. The default constructor is essential for generating a dataset template, which will be discussed in the next topic.
@@ -304,9 +304,9 @@ If any non-default constructors are declared, the empty default constructor shou
 
 ### UITAF Test Data provisioning
 
-UITAF is a distinctive framework designed to eliminate the guesswork involved in test data creation. Each artifact in UITAF, whether a POM or DOM, can be executed using the IntelliJ IDE. Running a DOM or POM generates an XML dataset template, which can be customized with static or dynamic data for testing purposes.
+UITAF is a distinctive framework designed to eliminate the guesswork involved in test data creation. Each artifact in UITAF, whether a POM or Domain Object, can be executed using the IntelliJ IDE. Running a Domain Object or POM generates an XML dataset template, which can be customized with static or dynamic data for testing purposes.
 
-To generate data for the VehicleInsuranceDO DOM, follow these steps:
+To generate data for the VehicleInsuranceDO, follow these steps:
 
 1. Open the VehicleInsuranceDO class in IntelliJ.
 2. Click the run button on the left side of the editor, next to the class declaration.
@@ -398,7 +398,7 @@ Copy the XML content starting from the ```<?xml version="1.0" encoding="UTF-8"?>
 
 This XML dataset file includes an aliases section that defines aliases. Aliases function like variables, holding values that can be used across your dataset or even across multiple datasets during test execution.
 
-Values can be provided directly for each field, such as ```<firstName>John</firstName>**```. However, if the same value needs to be replicated in multiple fields, using an alias helps avoid errors. Aliases are represented with the notation ```${...}```. For example, to embed the alias firstName, you would write ```<firstName>${firstName}</firstName>```.
+Values can be provided directly for each field, such as ```<firstName>John</firstName>```. However, if the same value needs to be replicated in multiple fields, using an alias helps avoid errors. Aliases are represented with the notation ```xml ${...}```. For example, to embed the alias firstName, you would write ```<firstName>${firstName}</firstName>```.
 
 Alias resolution occurs in the Aliases section of the XML dataset, where you can specify static values and dynamic expressions. These expressions may include data generators that produce random data or valid JEXL expressions that perform various tasks, such as connecting to databases or invoking services to retrieve data for use in your tests.
 
@@ -500,7 +500,7 @@ For example, you can use random data generators to produce unique data each time
 
 ### Test Class
 
-The test class serves as the entry point to our test, as it contains all the test methods. In our case, there is only one simple test, which creates an instance of our DOM and invokes its methods.
+The test class serves as the entry point to our test, as it contains all the test methods. In our case, there is only one simple test, which creates an instance of our Domain Object and invokes its methods.
 
 The test class is a TestNG-related class, utilizing the TestNG @Test annotation. For debugging purposes, the test is annotated with an optional parameter that specifies the dataset. This allows us to change the dataset to any existing one, and the test will run accordingly. The optional parameter is used only during debugging and is not included in formal test execution.
 
@@ -523,3 +523,48 @@ public class TestInsurancePolicy extends TestNGBase {
 
 }
 ```
+
+### TestNG Suite File
+
+The TestNG suite file is utilized to execute a collection of test cases for a specific feature as a suite. This file includes the declaration of the test classes to be invoked and the datasets to be used for specific test cases. The test cases can be executed sequentially or in parallel, depending on the configuration. For more detailed information and best practices, please consult the [TestNG framework documentation](https://testng.org/). It provides comprehensive guidance on how to structure, manage, and execute your test cases effectively.
+
+In our scenario, we have a single test class that is executed with different datasets, each designed to test a specific scenario of the **“Create Vehicle Insurance Policy”** feature. Below is an example of a suite file that will run four distinct scenarios for the “Create Insurance Policy feature: Automobile, Truck, Motorcycle, and a Randomly Generated Vehicle Insurance.
+
+```xml title='suite.xml'
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Policy suite" verbose="1" parallel="tests">
+
+    <test name="Automobile Policy Creation">
+        <parameter name="data-set" value="data/automobile-data.xml"/>
+        <classes>
+            <class name="com.yourcompany.example.tests.TestInsurancePolicy"/>
+        </classes>
+    </test>
+
+    <test name="Truck Policy Creation">
+        <parameter name="data-set" value="data/truck-data.xml"/>
+        <classes>
+            <class name="com.yourcompany.example.tests.TestInsurancePolicy"/>
+        </classes>
+    </test>
+
+    <test name="Motorcycle Policy Creation">
+        <parameter name="data-set" value="data/motorcycle-data.xml"/>
+        <classes>
+            <class name="com.yourcompany.example.tests.TestInsurancePolicy"/>
+        </classes>
+    </test>
+
+    <test name="Random Policy Creation">
+        <parameter name="data-set" value="data/random-data.xml"/>
+        <classes>
+            <class name="com.yourcompany.example.tests.TestInsurancePolicy"/>
+        </classes>
+    </test>
+
+
+</suite>
+```
+
+This concludes the explanation of the Automation Example Test. For further topics, please refer to the Handbook.
