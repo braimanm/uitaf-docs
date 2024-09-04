@@ -10,24 +10,24 @@ description: ''
 **UITAF (UI Test Automation Framework)** is a sophisticated, minimalistic framework designed for automated UI testing using Selenium. It incorporates a page-component architecture and integrates with Allure for comprehensive reporting.
 
 UITAF streamlines the creation of automated UI tests by providing:
-- **Automatic Test Data Generation**: Facilitates efficient test creation by automatically generating data sets from page objects.
-- **Detailed Reporting**: Generates comprehensive reports at the end of test executions.
+    - **Automatic Test Data Generation**: Facilitates efficient test creation by automatically generating data sets from page objects.
+    - **Detailed Reporting**: Generates comprehensive reports at the end of test executions.
 
 The framework introduces the **"domain-objects"** design pattern, enhancing business-oriented testing by efficiently managing complex scenarios that span multiple web pages.
 
 **UITAF** supports concurrent testing, allowing for:
-- **Simultaneous Execution**: Run multiple test cases concurrently across various browsers, Selenium grids, or cloud-based virtual machines.
-- **Efficient Resource Utilization**: Optimizes testing efficiency and resource management.
+    - **Simultaneous Execution**: Run multiple test cases concurrently across various browsers, Selenium grids, or cloud-based virtual machines.
+    - **Efficient Resource Utilization**: Optimizes testing efficiency and resource management.
 
 The framework integrates seamlessly with continuous integration systems, providing:
-- **Easy Configuration**: Configures tests for execution across different environments.
-- **Embedded Reporting**: Embeds test reports within CI server jobs.
+    - **Easy Configuration**: Configures tests for execution across different environments.
+    - **Embedded Reporting**: Embeds test reports within CI server jobs.
 
 ## Architecture
 
 The architecture of UITAF is illustrated below:
 
-![UITAF Architecture](https://user-images.githubusercontent.com/7651167/61151451-f7806980-a4b3-11e9-8e34-002d7c7458ad.png)
+![UITAF Architecture](img/uitaf_architecture.svg)
 
 Key components include:
 
@@ -49,8 +49,8 @@ UITAF is built around **Test Automation Components**, which simplify the automat
 **Page Components** in UITAF are Java classes that encapsulate automation behavior for reusable UI elements. These components abstract the complexity of underlying HTML elements and JavaScript code, making them reusable across multiple pages. If the UI framework changes, only the Component Library needs to be updated, preserving existing test artifacts.
 
 **Key Benefits**:
-- **Component Libraries**: Abstract complexity and ensure reusability across different pages.
-- **Page Component Integration**: Extends the Page Object model by incorporating Page Components as fields, thus simplifying Page Object code and abstracting Selenium WebDriver API interactions.
-- **Data Framework Facilities**: Handle test data using serialization/deserialization of Page Objects to XML templates, supporting dynamic data generation and expression language mechanisms.
+    - **Component Libraries**: Abstract complexity and ensure reusability across different pages.
+    - **Page Component Integration**: Extends the Page Object model by incorporating Page Components as fields, thus simplifying Page Object code and abstracting Selenium WebDriver API interactions.
+    - **Data Framework Facilities**: Handle test data using serialization/deserialization of Page Objects to XML templates, supporting dynamic data generation and expression language mechanisms.
 
 The **Domain Object** design pattern is an extension of the Page Object model that focuses on business logic across multiple pages. Domain Objects aggregate Page Objects to provide methods that manage business processes, making tests more maintainable and understandable.
