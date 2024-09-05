@@ -23,10 +23,8 @@ Here is an example:
 
 In this example:
 
-The @Step annotation is used to describe the action performed by the populateField method.
-{0} and {1} are placeholders for the fieldName and value arguments, respectively.
-When the method executes, the Allure report will include a step entry showing the field and value that were used.
-This approach allows for comprehensive and informative reporting, making it easier to track and analyze test execution.
+- The `@Step` annotation is used to describe the action performed by the populateField method.
+- `{0}` and `{1}` are placeholders for the fieldName and value arguments, respectively.
 
 ## @Features, @Stories, @Description
 
