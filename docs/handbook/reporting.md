@@ -7,6 +7,8 @@ description: ''
 
 UITAF integrates the open-source Allure reporting framework to capture events during test execution and generate detailed Allure reports. These reports can be hosted on various platforms, including CI tools like Jenkins.
 
+<a href="/report/" target="_blank" rel="noopener noreferrer">**Click here to view Test Automation Report Example**</a>
+
 ## @Step annotation for methods
 
 To include entries in the Allure report, annotate each method with the `@Step` annotation. This annotation creates a report entry for each annotated method, with the text provided in the `@Step` annotation serving as the entry description. If a method has arguments, these can also be reflected in the report. In this case, the @Step annotation should use placeholders to represent the arguments. The placeholders are formatted as `{0}` for the first argument, `{1}` for the second argument, and so on.
@@ -73,3 +75,5 @@ When a single test method is executed with multiple datasets that validate vario
 The reporting description, features, and stories can be distributed between the Test annotation and Dataset aliases. This approach allows some common reporting attributes to be associated with the test itself, while other reporting attributes can be provided through Dataset aliases.
 
 :::
+
+<a href="/report/" target="_blank" rel="noopener noreferrer">**Click here to view Test Automation Report Example**</a>
