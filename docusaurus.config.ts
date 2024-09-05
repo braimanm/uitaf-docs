@@ -87,7 +87,7 @@ const config: Config = {
       style: 'dark',
       links: [
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Michael Braiman creator of UITAF, Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Michael Braiman creator of UITAF email: braimanm@gmail.com, Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.oneLight,
