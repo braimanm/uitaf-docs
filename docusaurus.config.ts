@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'UITAF',
   tagline: 'UITAF Documentation',
-  favicon: 'img/uitaf_logo2.svg',
+  favicon: 'img/uitaf_logo.svg',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -67,7 +67,7 @@ const config: Config = {
       title: 'UITAF',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/uitaf_logo2.svg',
+        src: 'img/uitaf_logo.svg',
       },
       items: [
         {
