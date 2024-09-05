@@ -528,7 +528,7 @@ public class TestInsurancePolicy extends TestNGBase {
 
 The TestNG suite file is utilized to execute a collection of test cases for a specific feature as a suite. This file includes the declaration of the test classes to be invoked and the datasets to be used for specific test cases. The test cases can be executed sequentially or in parallel, depending on the configuration. For more detailed information and best practices, please consult the [TestNG framework documentation](https://testng.org/). It provides comprehensive guidance on how to structure, manage, and execute your test cases effectively.
 
-In our scenario, we have a single test class that is executed with different datasets, each designed to test a specific scenario of the **“Create Vehicle Insurance Policy”** feature. Below is an example of a suite file that will run four distinct scenarios for the “Create Insurance Policy feature: Automobile, Truck, Motorcycle, and a Randomly Generated Vehicle Insurance.
+In this scenario, a single test class is executed with different datasets, each designed to test a specific scenario of the **"Create Vehicle Insurance Policy"** functionality. The example below shows a suite file that runs five distinct scenarios for the **"Create Vehicle Insurance Policy"** functionality: **Automobile**, **Truck**, **Motorcycle**, and two variations of randomly generated vehicle insurance—one for **BDD** and one **without BDD**.
 
 ```xml title='suite.xml'
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
@@ -563,6 +563,12 @@ In our scenario, we have a single test class that is executed with different dat
         </classes>
     </test>
 
+    <test name="Random Policy Creation BDD">
+        <parameter name="data-set" value="data/random-data.xml"/>
+        <classes>
+            <class name="com.yourcompany.example.tests.TestInsurancePolicyBDD"/>
+        </classes>
+    </test>
 
 </suite>
 ```
