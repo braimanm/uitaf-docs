@@ -1,45 +1,45 @@
 {
-  "uid" : "4b4a7cb29195dff4",
+  "uid" : "2a52df41690cb3bf",
   "name" : "testCreatePolicy",
   "title" : "Test create policy",
   "time" : {
-    "start" : 1724780626645,
-    "stop" : 1724780633364,
-    "duration" : 6719
+    "start" : 1725565778060,
+    "stop" : 1725565786616,
+    "duration" : 8556
   },
   "summary" : {
     "attachments" : 2,
-    "steps" : 51
+    "steps" : 53
   },
   "failure" : null,
   "description" : null,
   "severity" : "NORMAL",
   "status" : "PASSED",
   "suite" : {
-    "uid" : "1e832f830d7fadfa",
-    "name" : "Policy suite : Random Policy Creation",
-    "title" : "Policy suite : Random Policy Creation"
+    "uid" : "cff5a1445b4da772",
+    "name" : "Policy suite : Truck Policy Creation",
+    "title" : "Policy suite : Truck Policy Creation"
   },
   "steps" : [ {
     "name" : "populate",
     "title" : "Populate Vehicle Info form with provided data",
     "time" : {
-      "start" : 1724780628575,
-      "stop" : 1724780630147,
-      "duration" : 1572
+      "start" : 1725565780326,
+      "stop" : 1725565782694,
+      "duration" : 2368
     },
     "summary" : {
       "attachments" : 0,
-      "steps" : 9
+      "steps" : 11
     },
     "status" : "PASSED",
     "attachments" : [ ],
     "steps" : [ {
-      "name" : "reportForAutoFill[Vehicle Type, Automobile]",
-      "title" : "Populate field \"Vehicle Type\" with value \"Automobile\"",
+      "name" : "reportForAutoFill[Vehicle Type, Truck]",
+      "title" : "Populate field \"Vehicle Type\" with value \"Truck\"",
       "time" : {
-        "start" : 1724780628806,
-        "stop" : 1724780628806,
+        "start" : 1725565780616,
+        "stop" : 1725565780616,
         "duration" : 0
       },
       "summary" : {
@@ -50,11 +50,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Make, Renault]",
-      "title" : "Populate field \"Make\" with value \"Renault\"",
+      "name" : "reportForAutoFill[Make, Volvo]",
+      "title" : "Populate field \"Make\" with value \"Volvo\"",
       "time" : {
-        "start" : 1724780629023,
-        "stop" : 1724780629023,
+        "start" : 1725565780917,
+        "stop" : 1725565780917,
         "duration" : 0
       },
       "summary" : {
@@ -65,11 +65,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Engine Performance, 294]",
-      "title" : "Populate field \"Engine Performance\" with value \"294\"",
+      "name" : "reportForAutoFill[Engine Performance, 336]",
+      "title" : "Populate field \"Engine Performance\" with value \"336\"",
       "time" : {
-        "start" : 1724780629227,
-        "stop" : 1724780629227,
+        "start" : 1725565781166,
+        "stop" : 1725565781166,
         "duration" : 0
       },
       "summary" : {
@@ -80,11 +80,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Manufacturer Date, 2015-01-23]",
-      "title" : "Populate field \"Manufacturer Date\" with value \"2015-01-23\"",
+      "name" : "reportForAutoFill[Manufacturer Date, 2020-08-05]",
+      "title" : "Populate field \"Manufacturer Date\" with value \"2020-08-05\"",
       "time" : {
-        "start" : 1724780629372,
-        "stop" : 1724780629372,
+        "start" : 1725565781364,
+        "stop" : 1725565781364,
         "duration" : 0
       },
       "summary" : {
@@ -95,11 +95,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Seats, 6]",
-      "title" : "Populate field \"Seats\" with value \"6\"",
+      "name" : "reportForAutoFill[Seats, 2]",
+      "title" : "Populate field \"Seats\" with value \"2\"",
       "time" : {
-        "start" : 1724780629501,
-        "stop" : 1724780629501,
+        "start" : 1725565781561,
+        "stop" : 1725565781561,
         "duration" : 0
       },
       "summary" : {
@@ -110,11 +110,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Fuel Type, Electric Power]",
-      "title" : "Populate field \"Fuel Type\" with value \"Electric Power\"",
+      "name" : "reportForAutoFill[Fuel Type, Diesel]",
+      "title" : "Populate field \"Fuel Type\" with value \"Diesel\"",
       "time" : {
-        "start" : 1724780629687,
-        "stop" : 1724780629687,
+        "start" : 1725565781782,
+        "stop" : 1725565781782,
         "duration" : 0
       },
       "summary" : {
@@ -125,11 +125,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[List Price, 61348]",
-      "title" : "Populate field \"List Price\" with value \"61348\"",
+      "name" : "reportForAutoFill[List Price, 120000]",
+      "title" : "Populate field \"List Price\" with value \"120000\"",
       "time" : {
-        "start" : 1724780629857,
-        "stop" : 1724780629857,
+        "start" : 1725565781967,
+        "stop" : 1725565781967,
         "duration" : 0
       },
       "summary" : {
@@ -140,11 +140,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[License Plate, KRIY-287]",
-      "title" : "Populate field \"License Plate\" with value \"KRIY-287\"",
+      "name" : "reportForAutoFill[License Plate, BIG001]",
+      "title" : "Populate field \"License Plate\" with value \"BIG001\"",
       "time" : {
-        "start" : 1724780630013,
-        "stop" : 1724780630013,
+        "start" : 1725565782152,
+        "stop" : 1725565782152,
         "duration" : 0
       },
       "summary" : {
@@ -155,11 +155,41 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Annual Mileage, 51541]",
-      "title" : "Populate field \"Annual Mileage\" with value \"51541\"",
+      "name" : "reportForAutoFill[Annual Mileage, 100000]",
+      "title" : "Populate field \"Annual Mileage\" with value \"100000\"",
       "time" : {
-        "start" : 1724780630147,
-        "stop" : 1724780630147,
+        "start" : 1725565782328,
+        "stop" : 1725565782328,
+        "duration" : 0
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Payload, 116450]",
+      "title" : "Populate field \"Payload\" with value \"116450\"",
+      "time" : {
+        "start" : 1725565782534,
+        "stop" : 1725565782535,
+        "duration" : 1
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "reportForAutoFill[Total Weight, 125000]",
+      "title" : "Populate field \"Total Weight\" with value \"125000\"",
+      "time" : {
+        "start" : 1725565782694,
+        "stop" : 1725565782694,
         "duration" : 0
       },
       "summary" : {
@@ -172,11 +202,11 @@
     } ]
   }, {
     "name" : "next",
-    "title" : "Click Submit Button",
+    "title" : "Click Next Button",
     "time" : {
-      "start" : 1724780630147,
-      "stop" : 1724780630214,
-      "duration" : 67
+      "start" : 1725565782695,
+      "stop" : 1725565782770,
+      "duration" : 75
     },
     "summary" : {
       "attachments" : 0,
@@ -189,9 +219,9 @@
     "name" : "populate",
     "title" : "Populate Client Info form with provided data",
     "time" : {
-      "start" : 1724780630223,
-      "stop" : 1724780631927,
-      "duration" : 1704
+      "start" : 1725565782777,
+      "stop" : 1725565785047,
+      "duration" : 2270
     },
     "summary" : {
       "attachments" : 0,
@@ -200,11 +230,11 @@
     "status" : "PASSED",
     "attachments" : [ ],
     "steps" : [ {
-      "name" : "reportForAutoFill[First Name, Arnold]",
-      "title" : "Populate field \"First Name\" with value \"Arnold\"",
+      "name" : "reportForAutoFill[First Name, Emily]",
+      "title" : "Populate field \"First Name\" with value \"Emily\"",
       "time" : {
-        "start" : 1724780630372,
-        "stop" : 1724780630372,
+        "start" : 1725565782934,
+        "stop" : 1725565782934,
         "duration" : 0
       },
       "summary" : {
@@ -215,11 +245,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Last Name, Marlatt]",
-      "title" : "Populate field \"Last Name\" with value \"Marlatt\"",
+      "name" : "reportForAutoFill[Last Name, Johnson]",
+      "title" : "Populate field \"Last Name\" with value \"Johnson\"",
       "time" : {
-        "start" : 1724780630514,
-        "stop" : 1724780630514,
+        "start" : 1725565783116,
+        "stop" : 1725565783116,
         "duration" : 0
       },
       "summary" : {
@@ -230,11 +260,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Date Of Birth, 1987-05-24]",
-      "title" : "Populate field \"Date Of Birth\" with value \"1987-05-24\"",
+      "name" : "reportForAutoFill[Date Of Birth, 1983-03-11]",
+      "title" : "Populate field \"Date Of Birth\" with value \"1983-03-11\"",
       "time" : {
-        "start" : 1724780630636,
-        "stop" : 1724780630636,
+        "start" : 1725565783285,
+        "stop" : 1725565783285,
         "duration" : 0
       },
       "summary" : {
@@ -245,11 +275,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Gender, Male]",
-      "title" : "Populate field \"Gender\" with value \"Male\"",
+      "name" : "reportForAutoFill[Gender, Female]",
+      "title" : "Populate field \"Gender\" with value \"Female\"",
       "time" : {
-        "start" : 1724780630789,
-        "stop" : 1724780630789,
+        "start" : 1725565783516,
+        "stop" : 1725565783516,
         "duration" : 0
       },
       "summary" : {
@@ -260,11 +290,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Street Address, 33280 St. Peter]",
-      "title" : "Populate field \"Street Address\" with value \"33280 St. Peter\"",
+      "name" : "reportForAutoFill[Street Address, 1200 Canyon Street]",
+      "title" : "Populate field \"Street Address\" with value \"1200 Canyon Street\"",
       "time" : {
-        "start" : 1724780630929,
-        "stop" : 1724780630929,
+        "start" : 1725565783698,
+        "stop" : 1725565783698,
         "duration" : 0
       },
       "summary" : {
@@ -275,11 +305,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Country, CANADA]",
-      "title" : "Populate field \"Country\" with value \"CANADA\"",
+      "name" : "reportForAutoFill[Country, USA]",
+      "title" : "Populate field \"Country\" with value \"USA\"",
       "time" : {
-        "start" : 1724780631072,
-        "stop" : 1724780631072,
+        "start" : 1725565783924,
+        "stop" : 1725565783924,
         "duration" : 0
       },
       "summary" : {
@@ -290,11 +320,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Zip Code, B0K 1H0]",
-      "title" : "Populate field \"Zip Code\" with value \"B0K 1H0\"",
+      "name" : "reportForAutoFill[Zip Code, 10010]",
+      "title" : "Populate field \"Zip Code\" with value \"10010\"",
       "time" : {
-        "start" : 1724780631215,
-        "stop" : 1724780631215,
+        "start" : 1725565784095,
+        "stop" : 1725565784095,
         "duration" : 0
       },
       "summary" : {
@@ -305,11 +335,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[City, Pictou]",
-      "title" : "Populate field \"City\" with value \"Pictou\"",
+      "name" : "reportForAutoFill[City, New York]",
+      "title" : "Populate field \"City\" with value \"New York\"",
       "time" : {
-        "start" : 1724780631361,
-        "stop" : 1724780631361,
+        "start" : 1725565784264,
+        "stop" : 1725565784264,
         "duration" : 0
       },
       "summary" : {
@@ -320,11 +350,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Occupation, Teacher]",
-      "title" : "Populate field \"Occupation\" with value \"Teacher\"",
+      "name" : "reportForAutoFill[Occupation, Truck Driver]",
+      "title" : "Populate field \"Occupation\" with value \"Truck Driver\"",
       "time" : {
-        "start" : 1724780631510,
-        "stop" : 1724780631510,
+        "start" : 1725565784471,
+        "stop" : 1725565784471,
         "duration" : 0
       },
       "summary" : {
@@ -335,11 +365,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Hobbies, Cooking]",
-      "title" : "Populate field \"Hobbies\" with value \"Cooking\"",
+      "name" : "reportForAutoFill[Hobbies, Golf]",
+      "title" : "Populate field \"Hobbies\" with value \"Golf\"",
       "time" : {
-        "start" : 1724780631658,
-        "stop" : 1724780631658,
+        "start" : 1725565784673,
+        "stop" : 1725565784673,
         "duration" : 0
       },
       "summary" : {
@@ -350,11 +380,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForAutoFill[Website, https://arrangementround.com]",
-      "title" : "Populate field \"Website\" with value \"https://arrangementround.com\"",
+      "name" : "reportForAutoFill[Website, None]",
+      "title" : "Populate field \"Website\" with value \"None\"",
       "time" : {
-        "start" : 1724780631810,
-        "stop" : 1724780631810,
+        "start" : 1725565784898,
+        "stop" : 1725565784898,
         "duration" : 0
       },
       "summary" : {
@@ -368,8 +398,8 @@
       "name" : "reportForAutoFill[Picture, data/face.png]",
       "title" : "Populate field \"Picture\" with value \"data/face.png\"",
       "time" : {
-        "start" : 1724780631927,
-        "stop" : 1724780631927,
+        "start" : 1725565785047,
+        "stop" : 1725565785047,
         "duration" : 0
       },
       "summary" : {
@@ -384,9 +414,9 @@
     "name" : "submit",
     "title" : "Click Submit Button",
     "time" : {
-      "start" : 1724780631927,
-      "stop" : 1724780632002,
-      "duration" : 75
+      "start" : 1725565785047,
+      "stop" : 1725565785143,
+      "duration" : 96
     },
     "summary" : {
       "attachments" : 0,
@@ -399,9 +429,9 @@
     "name" : "validate",
     "title" : "Validate Summary Page",
     "time" : {
-      "start" : 1724780632009,
-      "stop" : 1724780633364,
-      "duration" : 1355
+      "start" : 1725565785148,
+      "stop" : 1725565786616,
+      "duration" : 1468
     },
     "summary" : {
       "attachments" : 0,
@@ -410,11 +440,11 @@
     "status" : "PASSED",
     "attachments" : [ ],
     "steps" : [ {
-      "name" : "reportForValidation[vehicleType, Automobile]",
-      "title" : "Validate that the \"vehicleType\" field has the value \"Automobile\"",
+      "name" : "reportForValidation[vehicleType, Truck]",
+      "title" : "Validate that the \"vehicleType\" field has the value \"Truck\"",
       "time" : {
-        "start" : 1724780632010,
-        "stop" : 1724780632010,
+        "start" : 1725565785148,
+        "stop" : 1725565785148,
         "duration" : 0
       },
       "summary" : {
@@ -425,11 +455,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[make, Renault]",
-      "title" : "Validate that the \"make\" field has the value \"Renault\"",
+      "name" : "reportForValidation[make, Volvo]",
+      "title" : "Validate that the \"make\" field has the value \"Volvo\"",
       "time" : {
-        "start" : 1724780632077,
-        "stop" : 1724780632077,
+        "start" : 1725565785230,
+        "stop" : 1725565785230,
         "duration" : 0
       },
       "summary" : {
@@ -440,11 +470,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[enginePerformance, 294]",
-      "title" : "Validate that the \"enginePerformance\" field has the value \"294\"",
+      "name" : "reportForValidation[enginePerformance, 336]",
+      "title" : "Validate that the \"enginePerformance\" field has the value \"336\"",
       "time" : {
-        "start" : 1724780632153,
-        "stop" : 1724780632153,
+        "start" : 1725565785307,
+        "stop" : 1725565785307,
         "duration" : 0
       },
       "summary" : {
@@ -455,11 +485,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[manufacturerDate, 2015-01-23]",
-      "title" : "Validate that the \"manufacturerDate\" field has the value \"2015-01-23\"",
+      "name" : "reportForValidation[manufacturerDate, 2020-08-05]",
+      "title" : "Validate that the \"manufacturerDate\" field has the value \"2020-08-05\"",
       "time" : {
-        "start" : 1724780632220,
-        "stop" : 1724780632220,
+        "start" : 1725565785379,
+        "stop" : 1725565785379,
         "duration" : 0
       },
       "summary" : {
@@ -470,11 +500,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[seats, 6]",
-      "title" : "Validate that the \"seats\" field has the value \"6\"",
+      "name" : "reportForValidation[seats, 2]",
+      "title" : "Validate that the \"seats\" field has the value \"2\"",
       "time" : {
-        "start" : 1724780632303,
-        "stop" : 1724780632303,
+        "start" : 1725565785449,
+        "stop" : 1725565785449,
         "duration" : 0
       },
       "summary" : {
@@ -485,11 +515,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[fuelType, Electric Power]",
-      "title" : "Validate that the \"fuelType\" field has the value \"Electric Power\"",
+      "name" : "reportForValidation[fuelType, Diesel]",
+      "title" : "Validate that the \"fuelType\" field has the value \"Diesel\"",
       "time" : {
-        "start" : 1724780632413,
-        "stop" : 1724780632413,
+        "start" : 1725565785528,
+        "stop" : 1725565785528,
         "duration" : 0
       },
       "summary" : {
@@ -500,11 +530,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[listPrice, 61348]",
-      "title" : "Validate that the \"listPrice\" field has the value \"61348\"",
+      "name" : "reportForValidation[listPrice, 120000]",
+      "title" : "Validate that the \"listPrice\" field has the value \"120000\"",
       "time" : {
-        "start" : 1724780632498,
-        "stop" : 1724780632498,
+        "start" : 1725565785589,
+        "stop" : 1725565785589,
         "duration" : 0
       },
       "summary" : {
@@ -515,11 +545,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[licensePlate, KRIY-287]",
-      "title" : "Validate that the \"licensePlate\" field has the value \"KRIY-287\"",
+      "name" : "reportForValidation[licensePlate, BIG001]",
+      "title" : "Validate that the \"licensePlate\" field has the value \"BIG001\"",
       "time" : {
-        "start" : 1724780632557,
-        "stop" : 1724780632557,
+        "start" : 1725565785652,
+        "stop" : 1725565785652,
         "duration" : 0
       },
       "summary" : {
@@ -530,11 +560,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[annualMileage, 51541]",
-      "title" : "Validate that the \"annualMileage\" field has the value \"51541\"",
+      "name" : "reportForValidation[annualMileage, 100000]",
+      "title" : "Validate that the \"annualMileage\" field has the value \"100000\"",
       "time" : {
-        "start" : 1724780632615,
-        "stop" : 1724780632615,
+        "start" : 1725565785711,
+        "stop" : 1725565785711,
         "duration" : 0
       },
       "summary" : {
@@ -545,12 +575,12 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "validateFieldIsNotDisplayed[payload, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@2f2f91bb]",
-      "title" : "Validate that the \"payload\" field is hidden",
+      "name" : "reportForValidation[payload, 116450]",
+      "title" : "Validate that the \"payload\" field has the value \"116450\"",
       "time" : {
-        "start" : 1724780632678,
-        "stop" : 1724780632687,
-        "duration" : 9
+        "start" : 1725565785772,
+        "stop" : 1725565785772,
+        "duration" : 0
       },
       "summary" : {
         "attachments" : 0,
@@ -560,12 +590,12 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "validateFieldIsNotDisplayed[totalWeight, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@277fe059]",
-      "title" : "Validate that the \"totalWeight\" field is hidden",
+      "name" : "reportForValidation[totalWeight, 125000]",
+      "title" : "Validate that the \"totalWeight\" field has the value \"125000\"",
       "time" : {
-        "start" : 1724780632688,
-        "stop" : 1724780632697,
-        "duration" : 9
+        "start" : 1725565785831,
+        "stop" : 1725565785831,
+        "duration" : 0
       },
       "summary" : {
         "attachments" : 0,
@@ -575,11 +605,26 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "validateFieldIsNotDisplayed[model, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@23553fdc]",
+      "name" : "validateFieldIsNotDisplayed[model, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@5307ba88]",
       "title" : "Validate that the \"model\" field is hidden",
       "time" : {
-        "start" : 1724780632698,
-        "stop" : 1724780632706,
+        "start" : 1725565785888,
+        "stop" : 1725565785897,
+        "duration" : 9
+      },
+      "summary" : {
+        "attachments" : 0,
+        "steps" : 0
+      },
+      "status" : "PASSED",
+      "attachments" : [ ],
+      "steps" : [ ]
+    }, {
+      "name" : "validateFieldIsNotDisplayed[cylinderCapacity, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@6c41c139]",
+      "title" : "Validate that the \"cylinderCapacity\" field is hidden",
+      "time" : {
+        "start" : 1725565785897,
+        "stop" : 1725565785905,
         "duration" : 8
       },
       "summary" : {
@@ -590,26 +635,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "validateFieldIsNotDisplayed[cylinderCapacity, ui.auto.core.components.WebComponent$$EnhancerByCGLIB$$cbad6525@7011e627]",
-      "title" : "Validate that the \"cylinderCapacity\" field is hidden",
+      "name" : "reportForValidation[firstName, Emily]",
+      "title" : "Validate that the \"firstName\" field has the value \"Emily\"",
       "time" : {
-        "start" : 1724780632707,
-        "stop" : 1724780632717,
-        "duration" : 10
-      },
-      "summary" : {
-        "attachments" : 0,
-        "steps" : 0
-      },
-      "status" : "PASSED",
-      "attachments" : [ ],
-      "steps" : [ ]
-    }, {
-      "name" : "reportForValidation[firstName, Arnold]",
-      "title" : "Validate that the \"firstName\" field has the value \"Arnold\"",
-      "time" : {
-        "start" : 1724780632717,
-        "stop" : 1724780632717,
+        "start" : 1725565785905,
+        "stop" : 1725565785905,
         "duration" : 0
       },
       "summary" : {
@@ -620,11 +650,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[lastName, Marlatt]",
-      "title" : "Validate that the \"lastName\" field has the value \"Marlatt\"",
+      "name" : "reportForValidation[lastName, Johnson]",
+      "title" : "Validate that the \"lastName\" field has the value \"Johnson\"",
       "time" : {
-        "start" : 1724780632787,
-        "stop" : 1724780632787,
+        "start" : 1725565785965,
+        "stop" : 1725565785965,
         "duration" : 0
       },
       "summary" : {
@@ -635,11 +665,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[dateOfBirth, 1987-05-24]",
-      "title" : "Validate that the \"dateOfBirth\" field has the value \"1987-05-24\"",
+      "name" : "reportForValidation[dateOfBirth, 1983-03-11]",
+      "title" : "Validate that the \"dateOfBirth\" field has the value \"1983-03-11\"",
       "time" : {
-        "start" : 1724780632844,
-        "stop" : 1724780632844,
+        "start" : 1725565786027,
+        "stop" : 1725565786027,
         "duration" : 0
       },
       "summary" : {
@@ -650,11 +680,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[gender, Male]",
-      "title" : "Validate that the \"gender\" field has the value \"Male\"",
+      "name" : "reportForValidation[gender, Female]",
+      "title" : "Validate that the \"gender\" field has the value \"Female\"",
       "time" : {
-        "start" : 1724780632897,
-        "stop" : 1724780632897,
+        "start" : 1725565786086,
+        "stop" : 1725565786086,
         "duration" : 0
       },
       "summary" : {
@@ -665,11 +695,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[streetAddress, 33280 St. Peter]",
-      "title" : "Validate that the \"streetAddress\" field has the value \"33280 St. Peter\"",
+      "name" : "reportForValidation[streetAddress, 1200 Canyon Street]",
+      "title" : "Validate that the \"streetAddress\" field has the value \"1200 Canyon Street\"",
       "time" : {
-        "start" : 1724780632951,
-        "stop" : 1724780632951,
+        "start" : 1725565786150,
+        "stop" : 1725565786150,
         "duration" : 0
       },
       "summary" : {
@@ -680,11 +710,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[country, CANADA]",
-      "title" : "Validate that the \"country\" field has the value \"CANADA\"",
+      "name" : "reportForValidation[country, USA]",
+      "title" : "Validate that the \"country\" field has the value \"USA\"",
       "time" : {
-        "start" : 1724780633002,
-        "stop" : 1724780633002,
+        "start" : 1725565786207,
+        "stop" : 1725565786207,
         "duration" : 0
       },
       "summary" : {
@@ -695,11 +725,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[zipCode, B0K 1H0]",
-      "title" : "Validate that the \"zipCode\" field has the value \"B0K 1H0\"",
+      "name" : "reportForValidation[zipCode, 10010]",
+      "title" : "Validate that the \"zipCode\" field has the value \"10010\"",
       "time" : {
-        "start" : 1724780633052,
-        "stop" : 1724780633052,
+        "start" : 1725565786300,
+        "stop" : 1725565786300,
         "duration" : 0
       },
       "summary" : {
@@ -710,11 +740,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[city, Pictou]",
-      "title" : "Validate that the \"city\" field has the value \"Pictou\"",
+      "name" : "reportForValidation[city, New York]",
+      "title" : "Validate that the \"city\" field has the value \"New York\"",
       "time" : {
-        "start" : 1724780633104,
-        "stop" : 1724780633104,
+        "start" : 1725565786357,
+        "stop" : 1725565786357,
         "duration" : 0
       },
       "summary" : {
@@ -725,11 +755,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[occupation, Teacher]",
-      "title" : "Validate that the \"occupation\" field has the value \"Teacher\"",
+      "name" : "reportForValidation[occupation, Truck Driver]",
+      "title" : "Validate that the \"occupation\" field has the value \"Truck Driver\"",
       "time" : {
-        "start" : 1724780633154,
-        "stop" : 1724780633154,
+        "start" : 1725565786415,
+        "stop" : 1725565786415,
         "duration" : 0
       },
       "summary" : {
@@ -740,11 +770,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[hobbies, Cooking]",
-      "title" : "Validate that the \"hobbies\" field has the value \"Cooking\"",
+      "name" : "reportForValidation[hobbies, Golf]",
+      "title" : "Validate that the \"hobbies\" field has the value \"Golf\"",
       "time" : {
-        "start" : 1724780633205,
-        "stop" : 1724780633205,
+        "start" : 1725565786467,
+        "stop" : 1725565786467,
         "duration" : 0
       },
       "summary" : {
@@ -755,11 +785,11 @@
       "attachments" : [ ],
       "steps" : [ ]
     }, {
-      "name" : "reportForValidation[website, https://arrangementround.com]",
-      "title" : "Validate that the \"website\" field has the value \"https://arrangementround.com\"",
+      "name" : "reportForValidation[website, None]",
+      "title" : "Validate that the \"website\" field has the value \"None\"",
       "time" : {
-        "start" : 1724780633255,
-        "stop" : 1724780633255,
+        "start" : 1725565786524,
+        "stop" : 1725565786524,
         "duration" : 0
       },
       "summary" : {
@@ -773,8 +803,8 @@
       "name" : "reportForValidation[picture, face.png]",
       "title" : "Validate that the \"picture\" field has the value \"face.png\"",
       "time" : {
-        "start" : 1724780633306,
-        "stop" : 1724780633306,
+        "start" : 1725565786574,
+        "stop" : 1725565786574,
         "duration" : 0
       },
       "summary" : {
@@ -787,50 +817,50 @@
     } ]
   } ],
   "attachments" : [ {
-    "title" : "data/random-data.xml",
-    "source" : "a231fe64-2d32-479c-af6d-b7c9c14c936d-attachment.xml",
+    "title" : "data/truck-data.xml",
+    "source" : "75dc714d-ba19-431c-aa05-c3f31fde41c9-attachment.xml",
     "type" : "text/xml",
-    "size" : 2028,
-    "uid" : "a242ea19e2287501"
+    "size" : 1856,
+    "uid" : "f7ab1594feffbad9"
   }, {
-    "title" : "Global Aliases : data/random-data.xml",
-    "source" : "cb9fc7b5-8ad0-403a-a56b-d26207174a26-attachment.xml",
+    "title" : "Global Aliases : data/truck-data.xml",
+    "source" : "11204dbe-6c16-4571-9941-47d49a7433cb-attachment.xml",
     "type" : "text/xml",
-    "size" : 1068,
-    "uid" : "3b4ae65c8b6c712b"
+    "size" : 825,
+    "uid" : "508c7b8dba0fbd78"
   } ],
   "issues" : [ ],
   "testIds" : [ ],
   "labels" : [ {
-    "name" : "testGroup",
-    "value" : "Random Policy Creation"
+    "name" : "suite-title",
+    "value" : "Policy suite : Truck Policy Creation"
   }, {
     "name" : "host",
-    "value" : "my.localdomain"
+    "value" : "Michaels-MBP-2.localdomain"
   }, {
     "name" : "language",
     "value" : "JAVA"
   }, {
-    "name" : "suite-title",
-    "value" : "Policy suite : Random Policy Creation"
-  }, {
     "name" : "testMethod",
     "value" : "testCreatePolicy"
-  }, {
-    "name" : "thread",
-    "value" : "22494@my.localdomain.TestNG-tests-4(15)"
   }, {
     "name" : "feature",
     "value" : "Insurance Policy"
   }, {
+    "name" : "thread",
+    "value" : "74412@Michaels-MBP-2.localdomain.TestNG-tests-2(13)"
+  }, {
     "name" : "framework",
     "value" : "TestNG"
   }, {
+    "name" : "suite-name",
+    "value" : "Policy suite : Truck Policy Creation"
+  }, {
+    "name" : "testGroup",
+    "value" : "Truck Policy Creation"
+  }, {
     "name" : "testSuite",
     "value" : "Policy suite"
-  }, {
-    "name" : "suite-name",
-    "value" : "Policy suite : Random Policy Creation"
   }, {
     "name" : "testClass",
     "value" : "com.yourcompany.example.tests.TestInsurancePolicy"

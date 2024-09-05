@@ -1,58 +1,72 @@
 {
   "hosts" : [ {
-    "title" : "my.localdomain",
+    "title" : "Michaels-MBP-2.localdomain",
     "threads" : [ {
-      "title" : "22494@my.localdomain.TestNG-tests-1(12)",
+      "title" : "74412@Michaels-MBP-2.localdomain.TestNG-tests-5(16)",
       "testCases" : [ {
-        "uid" : "f94e9fbb26c31b8d",
+        "uid" : "7fcad9f6e16ee183",
         "name" : "testCreatePolicy",
         "title" : "Test create policy",
         "time" : {
-          "start" : 1724780626645,
-          "stop" : 1724780633387,
-          "duration" : 6742
+          "start" : 1725565778060,
+          "stop" : 1725565786529,
+          "duration" : 8469
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       } ]
     }, {
-      "title" : "22494@my.localdomain.TestNG-tests-4(15)",
+      "title" : "74412@Michaels-MBP-2.localdomain.TestNG-tests-3(14)",
       "testCases" : [ {
-        "uid" : "4b4a7cb29195dff4",
+        "uid" : "48269a9380a4bd43",
         "name" : "testCreatePolicy",
         "title" : "Test create policy",
         "time" : {
-          "start" : 1724780626645,
-          "stop" : 1724780633364,
-          "duration" : 6719
+          "start" : 1725565778060,
+          "stop" : 1725565786514,
+          "duration" : 8454
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       } ]
     }, {
-      "title" : "22494@my.localdomain.TestNG-tests-3(14)",
+      "title" : "74412@Michaels-MBP-2.localdomain.TestNG-tests-2(13)",
       "testCases" : [ {
-        "uid" : "b7233536dd2acc4f",
+        "uid" : "2a52df41690cb3bf",
         "name" : "testCreatePolicy",
         "title" : "Test create policy",
         "time" : {
-          "start" : 1724780626645,
-          "stop" : 1724780633754,
-          "duration" : 7109
+          "start" : 1725565778060,
+          "stop" : 1725565786616,
+          "duration" : 8556
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       } ]
     }, {
-      "title" : "22494@my.localdomain.TestNG-tests-2(13)",
+      "title" : "74412@Michaels-MBP-2.localdomain.TestNG-tests-4(15)",
       "testCases" : [ {
-        "uid" : "daeb64fdf13db4f1",
+        "uid" : "f269d17852cd7715",
         "name" : "testCreatePolicy",
         "title" : "Test create policy",
         "time" : {
-          "start" : 1724780626645,
-          "stop" : 1724780633744,
-          "duration" : 7099
+          "start" : 1725565778060,
+          "stop" : 1725565786238,
+          "duration" : 8178
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    }, {
+      "title" : "74412@Michaels-MBP-2.localdomain.TestNG-tests-1(12)",
+      "testCases" : [ {
+        "uid" : "fb5cb5e340d8ea7a",
+        "name" : "testCreatePolicy",
+        "title" : "Test create policy",
+        "time" : {
+          "start" : 1725565778060,
+          "stop" : 1725565786133,
+          "duration" : 8073
         },
         "severity" : "NORMAL",
         "status" : "PASSED"

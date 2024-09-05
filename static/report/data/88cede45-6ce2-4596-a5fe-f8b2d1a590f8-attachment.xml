@@ -1,0 +1,28 @@
+<datainstiller.data.DataAliases>
+  <lastName>Ragusa</lastName>
+  <country>CANADA</country>
+  <zipCode>V0N 3A0</zipCode>
+  <occupation>Teacher</occupation>
+  <gender>Male</gender>
+  <city>Sechelt</city>
+  <seats>5</seats>
+  <enginePerformance>477</enginePerformance>
+  <licensePlate>OXPR-364</licensePlate>
+  <payload></payload>
+  <model>Gold Wing DCT</model>
+  <make>Nissan</make>
+  <vehicleType>Motorcycle</vehicleType>
+  <annualMileage>93319</annualMileage>
+  <website>https://woodengoes.com</website>
+  <address>Country: CANADA, Street #: 389, Street Name: Companion, City: Sechelt, Province Name: British Columbia, Province Code: BC, Postal Code: V0N 3A0</address>
+  <manufacturerDate>2004-10-08</manufacturerDate>
+  <dateOfBirth>1966-08-20</dateOfBirth>
+  <cylinderCapacity>1833</cylinderCapacity>
+  <url>https://uitaf.org/test/</url>
+  <firstName>Scot</firstName>
+  <fuelType>Other</fuelType>
+  <streetAddress>389 Companion</streetAddress>
+  <hobbies>Biking</hobbies>
+  <totalWeight></totalWeight>
+  <listPrice>94078</listPrice>
+</datainstiller.data.DataAliases>

@@ -2,15 +2,38 @@
   "features" : [ {
     "title" : "Insurance Policy",
     "statistic" : {
-      "total" : 4,
-      "passed" : 4,
+      "total" : 5,
+      "passed" : 5,
       "pending" : 0,
       "canceled" : 0,
       "failed" : 0,
       "broken" : 0
     },
     "stories" : [ {
-      "uid" : "412fe33b9c8863e2",
+      "uid" : "e4b93f3157ac028d",
+      "title" : "BDD: User creates new insurance policy quote",
+      "statistic" : {
+        "total" : 1,
+        "passed" : 1,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 0,
+        "broken" : 0
+      },
+      "testCases" : [ {
+        "uid" : "7fcad9f6e16ee183",
+        "name" : "testCreatePolicy",
+        "title" : "Test create policy",
+        "time" : {
+          "start" : 1725565778060,
+          "stop" : 1725565786529,
+          "duration" : 8469
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      } ]
+    }, {
+      "uid" : "9c17a28971b785d0",
       "title" : "User creates new insurance policy quote",
       "statistic" : {
         "total" : 4,
@@ -21,46 +44,46 @@
         "broken" : 0
       },
       "testCases" : [ {
-        "uid" : "f94e9fbb26c31b8d",
+        "uid" : "48269a9380a4bd43",
         "name" : "testCreatePolicy",
         "title" : "Test create policy",
         "time" : {
-          "start" : 1724780626645,
-          "stop" : 1724780633387,
-          "duration" : 6742
+          "start" : 1725565778060,
+          "stop" : 1725565786514,
+          "duration" : 8454
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "4b4a7cb29195dff4",
+        "uid" : "2a52df41690cb3bf",
         "name" : "testCreatePolicy",
         "title" : "Test create policy",
         "time" : {
-          "start" : 1724780626645,
-          "stop" : 1724780633364,
-          "duration" : 6719
+          "start" : 1725565778060,
+          "stop" : 1725565786616,
+          "duration" : 8556
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "b7233536dd2acc4f",
+        "uid" : "f269d17852cd7715",
         "name" : "testCreatePolicy",
         "title" : "Test create policy",
         "time" : {
-          "start" : 1724780626645,
-          "stop" : 1724780633754,
-          "duration" : 7109
+          "start" : 1725565778060,
+          "stop" : 1725565786238,
+          "duration" : 8178
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
       }, {
-        "uid" : "daeb64fdf13db4f1",
+        "uid" : "fb5cb5e340d8ea7a",
         "name" : "testCreatePolicy",
         "title" : "Test create policy",
         "time" : {
-          "start" : 1724780626645,
-          "stop" : 1724780633744,
-          "duration" : 7099
+          "start" : 1725565778060,
+          "stop" : 1725565786133,
+          "duration" : 8073
         },
         "severity" : "NORMAL",
         "status" : "PASSED"
