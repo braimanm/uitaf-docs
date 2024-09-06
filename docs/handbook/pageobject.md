@@ -82,11 +82,30 @@ Dataset generation and deserialization are key features of the UITAF framework, 
 
 ### Data Generation
 
-This process involves creating XML datasets from Page Objects. You can initiate the generation process by clicking the run button on the left side of the IntelliJ editor while viewing a specific Page Object. The generated XML serves as a template where field values are initially set to their tag names. This template must be edited to include specific data required for your tests.
+This process involves creating XML datasets from Page Objects and Domain Objects. You can initiate the generation process by clicking the run button on the left side of the IntelliJ editor while viewing a specific Page Object or Domain Object. The generated XML serves as a template where field values are initially set to their tag names. This template must be edited to include specific data required for your tests.
+
+To generate data for the Page Object or Domain Object, follow these steps:
+
+1. Open the Page Object Or Domain Object class in IntelliJ.
+2. Click the run button on the left side of the editor, next to the class declaration.
+3. Select the **Run '\<Class Name\>'** option from the dropdown menu that appears.
+Refer to the following picture for visual guidance:
+![Screenshot of IntelliJ Run Button](./img/intelij_run_button.png)
+After performing these actions, the test data will be generated and displayed in the IntelliJ Run Tool Window, located at the bottom of the IDE.
+![Screenshot of IntelliJ Run Button](./img/intelij_run_console.png)
+Copy the XML content starting from the ```<?xml version="1.0" encoding="UTF-8"?>``` line and extending to the last closing XML tag. Paste this content into a new file in the resources/data directory. You can then modify this file to include data values for the specific scenario. For example, automobile-data.xml is used for testing Automobile Insurance; this file was initially generated and then modified to include valid data.
 
 ### Deserialization
 
-Once the XML dataset is edited, it can be deserialized back into Page Objects. This deserialization process automatically initializes all Page Components with the corresponding data, streamlining test execution and eliminating the need for manual data entry.
+Once the XML dataset is edited, it can be deserialized back into Page Objects or Domain Objects. This deserialization process automatically initializes all Page Components with the corresponding data, streamlining test execution and eliminating the need for manual data entry.
+
+In UITAF, the deserialization of a Page Object or Domain Object is often the first step in a TestNG test method. This process involves converting an XML dataset file located in the resources folder (e.g., src/main/resources/data/random-data.xml) into a Domain Object that can be used during the test execution.
+
+To deserialize a dataset file into a Domain Object named VehicleInsuranceDO, the following Java code can be used within the test method:
+
+```java
+VehicleInsuranceDO vehicleInsuranceDO = new VehicleInsuranceDO().fromResource("data/random-data.xml");
+```
 
 ### Aliases
 

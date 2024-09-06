@@ -9,7 +9,11 @@ Domain Objects in UITAF share many similarities with Page Objects but serve a di
 
 For instance, when testing a business process that spans several pages or forms, a Domain Object can encapsulate all relevant Page Objects and their associated data. This approach streamlines the management of tests across multiple pages, ensuring that interactions and workflows are efficiently executed within the UITAF framework.
 
-Furthermore, all aspects of dataset generation and deserialization, including the use of data generators and JEXL expressions, are applicable to Domain Objects, ensuring consistency in data handling across both object types. Dataset aliases are also accessible across different Page Objects within a Domain Object, reducing errors associated with manual data duplication and enhancing the efficiency of test data management.
+Furthermore, all aspects of dataset generation and deserialization, are applicable to Domain Objects, ensuring consistency in data handling across both object types. Dataset aliases are also accessible across different Page Objects within a Domain Object, reducing errors associated with manual data duplication and enhancing the efficiency of test data management.
+
+[For data generation, consult here](./pageobject.md#data-generation)
+
+[For data deserialization, consult here](./pageobject.md#deserialization)
 
 ## Example of Domain Object: VehicleInsuranceDO
 

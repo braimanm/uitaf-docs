@@ -306,16 +306,7 @@ If any non-default constructors are declared, the empty default constructor shou
 
 UITAF is a distinctive framework designed to eliminate the guesswork involved in test data creation. Each artifact in UITAF, whether a POM or Domain Object, can be executed using the IntelliJ IDE. Running a Domain Object or POM generates an XML dataset template, which can be customized with static or dynamic data for testing purposes.
 
-To generate data for the VehicleInsuranceDO, follow these steps:
-
-1. Open the VehicleInsuranceDO class in IntelliJ.
-2. Click the run button on the left side of the editor, next to the class declaration.
-3. Select the **Run 'VehicleInsuranceDO'** option from the dropdown menu that appears.
-Refer to the following picture for visual guidance:
-![Screenshot of IntelliJ Run Button](./img/intelij_run_button.png)
-After performing these actions, the test data will be generated and displayed in the IntelliJ Run Tool Window, located at the bottom of the IDE.
-![Screenshot of IntelliJ Run Button](./img/intelij_run_console.png)
-Copy the XML content starting from the ```<?xml version="1.0" encoding="UTF-8"?>``` line and extending to the last closing XML tag. Paste this content into a new file in the resources/data directory. You can then modify this file to include data values for the specific scenario. For example, automobile-data.xml is used for testing Automobile Insurance; this file was initially generated and then modified to include valid data.
+To generate data for the VehicleInsuranceDO, [follow these steps](../handbook/pageobject.md#data-generation)
 
 ```xml title='automobile-data.xml'
 <?xml version="1.0" encoding="UTF-8"?>
