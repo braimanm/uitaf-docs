@@ -52,7 +52,7 @@ To build and execute the test automation solution, follow these steps:
 
 ## Test Execution Details
 
-- The test will launch **four instances of the Chrome browser** and run **four different test cases in parallel**.
+- The test will launch **five instances of the Chrome browser** and run **five different test cases in parallel**.
 - Upon completion of the test execution, a detailed <a href="/report/" target="_blank" rel="noopener noreferrer">**report**</a> with the results will be automatically launched in your default web browser.
 
 :::info
