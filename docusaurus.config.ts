@@ -77,6 +77,12 @@ const config: Config = {
           target: '_blank',
         },
         {
+          to: './report/',
+          label: 'Test Report Example',
+          position: 'left',
+          target: '_blank',
+        },
+        {
           href: 'https://github.com/braimanm/selenium-uitaf',
           label: 'GitHub',
           position: 'right',
