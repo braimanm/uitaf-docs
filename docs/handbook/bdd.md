@@ -3,7 +3,7 @@ sidebar_position: 7
 description: ''
 ---
 
-# BDD (UITAF Version)
+# BDD (UITAF Way)
 
 Behavior Driven Development (BDD) is a popular collaboration tool used to specify, develop, and test user stories in plain English. While frameworks like Cucumber are commonly associated with BDD for writing automated test cases, it is important to note that BDD is not tied to Cucumber; the same concept can be implemented in different ways.
 

@@ -3,7 +3,7 @@ sidebar_position: 3
 description: ''
 ---
 
-# Page Object (UITAF Version)
+# Page Object (UITAF Way)
 
 The UITAF Page Object Model is conceptually similar to the traditional Selenium Page Object Model but has a distinct difference in its approach to defining elements.
 
