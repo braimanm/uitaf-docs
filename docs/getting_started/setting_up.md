@@ -24,9 +24,8 @@ project_example/
 │       │               │   └── (Domain object classes)
 │       │               ├── pageobjects/
 │       │               │   └── (Page object classes)
-│       │               └── tests/
-│       │                   └── TestClasses/
-│       │                       └── (Test classes)
+│       │               └── tests/              
+│       │                    └── (Test classes)
 │       └── resources/
 │           ├── data/
 │           │   └── testdata.xml
@@ -47,10 +46,9 @@ project_example/
 - **src/main/java/com/yourcompany/example/domainobjects/:** - Contains domain objects used in tests.
 - **src/main/java/com/yourcompany/example/pageobjects/:** - Contains page objects representing different web pages for testing.
 - **src/main/java/com/yourcompany/example/tests/:** - Folder for test classes.
-- **TestClasses/:** - Folder for your test classes.
 - **src/main/resources/:** - Contains resources needed for tests.
 - **data/:** - Stores test data files.
-- **suites/:** - Contains TestNG suite configuration files.
+- **suites/:** - Contains TestNG suite files.
 - **test.properties:** - Properties file for test configurations.
 - **environments.xml:** - XML file for environment configurations.
 - **.gitignore:** - Specifies files and directories to ignore in version control.
