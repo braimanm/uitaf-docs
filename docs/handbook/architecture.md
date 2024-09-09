@@ -31,16 +31,16 @@ The architecture of UITAF is illustrated below:
 
 Key components include:
 
-- **Selenium WebDriver**: Controls the web browser to simulate user interactions with the web application under test.
-- **Web Page Components**: Reusable libraries encapsulating the operation and testing of HTML elements, developed using the Selenium WebDriver API.
-- **Page Object Models**: Represent specific web page components and services, providing methods for interacting with HTML elements without directly using the Selenium WebDriver API.
-- **Domain Object Models**: Encapsulate business logic that spans multiple web pages, aggregating Page Objects to offer business-oriented methods.
-- **Test Orchestration and Concurrency**: Manages multiple test scenarios and data provisioning, allocating execution threads from a configurable pool.
-- **XML Test Data Sets**: Structured files defining test parameters and expected results, used for input data and validation during tests.
-- **Test Scripts**: Java code implementing test scenarios using Domain Objects and Page Objects.
-- **Test Context and Parameters**: Configure global environments, including WebDriver instances and test timeouts.
-- **Test Lifecycle**: Records and aggregates test execution events, generating reports based on these events.
-- **Test Report**: A web application generated from Test Lifecycle artifacts, providing detailed views of test execution data.
+- **Selenium WebDriver:** Automates web browsers to emulate real user interactions with the web application under test, enabling robust, browser-based testing.
+- **Web Page Components:** Reusable libraries encapsulating the behavior and testing of composit HTML elements, built using the Selenium WebDriver API, allowing for modular and scalable UI testing.
+- **Page Object Models (POM):** Abstractions representing individual web pages that aggregate page components and provide page-specific methods for test automation, promoting both maintainability and reusability.
+- **Domain Object Models:** Business-oriented representations that span multiple web pages, aggregating Page Objects and offering higher-level methods that reflect the application’s business logic and workflows.
+- **Test Orchestration and Concurrency:** Manages the execution of multiple test scenarios, coordinating data provisioning and allocating execution threads from a configurable thread pool to ensure efficient parallel testing.
+- **XML Test Data Sets:** Structured files that define test inputs, parameters, and expected outcomes, serving as data providers for test cases and ensuring consistent validation against predefined criteria.
+- **Test Scripts:** Java implementations of test scenarios that utilize Domain Objects and Page Objects to validate application functionality and workflows.
+- **Test Context and Parameters:** Centralized configuration management for test environments, including WebDriver instances, timeouts, and other global test settings to ensure consistency across test runs.
+- **Test Lifecycle Management:** Tracks and aggregates key events during test execution, providing detailed logging and reporting capabilities for monitoring and debugging.
+- **Test Report:** A comprehensive web-based application generated from Test Lifecycle data, offering detailed insights into test execution, results, and performance metrics.
 
 ## Test Automation Components
 
