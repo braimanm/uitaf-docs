@@ -19,6 +19,8 @@ The UITAF is designed to streamline the automation of complex business **process
 
 ### Page Components
 
+> **"UITAF Page Components are to test automation what UI Component Libraries are to web development."**
+
 UITAF’s philosophy is built on principles of **abstraction, modularity,** and **reusability**. It simplifies interactions with complex UI controls through **Page Components**, which represent entire UI controls such as **auto-completes, date pickers,** and **dual listboxes**. These components encapsulate multiple elements and their underlying logic, simulating real user interactions. Unlike Selenium’s approach of handling individual elements, UITAF treats these components as **reusable units**, aligning the automation process with real-world user tasks.
 
 ### Page Objects
