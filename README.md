@@ -1,3 +1,3 @@
 # UITAF Documentation
 
-This is docusaurus based documentation
+This is docusaurus based documentation for UITAF project

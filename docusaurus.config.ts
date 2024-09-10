@@ -83,6 +83,11 @@ const config: Config = {
           target: '_blank',
         },
         {
+          href: 'https://www.braimanm.com/',
+          label: 'About Me',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/braimanm/selenium-uitaf',
           label: 'GitHub',
           position: 'right',
