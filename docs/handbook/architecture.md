@@ -32,7 +32,7 @@ The architecture of UITAF is illustrated below:
 Key components include:
 
 - **Selenium WebDriver:** Automates web browsers to emulate real user interactions with the web application under test, enabling robust, browser-based testing.
-- **Web Page Components:** Reusable libraries encapsulating the behavior and testing of composit HTML elements, built using the Selenium WebDriver API, allowing for modular and scalable UI testing.
+- **Page Components:** Reusable libraries encapsulating the behavior and testing of composit HTML elements, built using the Selenium WebDriver API, allowing for modular and scalable UI testing.
 - **Page Object Models (POM):** Abstractions representing individual web pages that aggregate page components and provide page-specific methods for test automation, promoting both maintainability and reusability.
 - **Domain Object Models:** Business-oriented representations that span multiple web pages, aggregating Page Objects and offering higher-level methods that reflect the application’s business logic and workflows.
 - **Test Orchestration and Concurrency:** Manages the execution of multiple test scenarios, coordinating data provisioning and allocating execution threads from a configurable thread pool to ensure efficient parallel testing.
