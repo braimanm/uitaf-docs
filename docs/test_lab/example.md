@@ -11,10 +11,9 @@ This test automation example uses the UITAF open-source framework to perform UI 
 Before running the test, ensure that the following software is installed on the target machine:
 
 1. **JDK Version 8**: Ensure that Java 8 is installed, as the test is only supported by this version.
-2. **Maven**: Required to build and manage the project dependencies.
-3. **Git**: Needed to clone the project repository.
-4. **Chrome Browser**: Ensure Chrome browser is installed on the machine where the test will run.
-5. **IntelliJ IDEA** (Optional): You can use IntelliJ to open and work with the project as a Maven project.
+2. **Git**: Needed to clone the project repository.
+3. **Chrome Browser**: Ensure Chrome browser is installed on the machine where the test will run.
+4. **IntelliJ IDEA** (Optional): You can use IntelliJ to open and work with the project as a Maven project.
 
 ## Setup and Execution
 
@@ -37,8 +36,12 @@ To build and execute the test automation solution, follow these steps:
 3. **Build the Solution**:
    - Run the following Maven command to clean and package the project:
 
-    ```bash
-    mvn clean package
+    ```bash title="For Linux/macOS:"
+    ./mvnw clean package
+    ```
+
+    ```bash title="For Windows:"
+    mvnw.cmd clean package
     ```
 
 4. **Execute the Solution**:
