@@ -236,7 +236,7 @@ JEXL can recognize and evaluate UITAF-provided variables such as:
 
 ## Exposing Custom Functionality for JEXL Expressions
 
-If you have a REST service or database from which you need to retrieve data for validation purposes, and you have created a helper class (e.g., DataService) with a method like getData(), you can expose this service to JEXL expressions by overriding the initJexlContext(JexlContext) method in your Page Object.
+If you have a REST service or database from which you need to retrieve data for validation purposes, and you have created a helper class (e.g., DataService) with a method like getData(), you can expose this service to JEXL expressions by overriding the initJexlContext(JexlContext) method in your Page Object or Domain Object.
 
 Here's how you can provide an alias for your service:
 
