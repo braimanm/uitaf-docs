@@ -34,7 +34,7 @@ To build and execute the test automation solution, follow these steps:
     ```
 
 3. **Build the Solution**:
-   - Run the following Maven command to clean and package the project:
+   - Execute the following command to build the solution:
 
     ```bash title="For Linux/macOS:"
     ./mvnw clean package
