@@ -124,4 +124,4 @@ The UITAF BDD DSL used in this test is valid Java code compatible with Java 8 an
 
 A significant advantage of this BDD approach is its integration of test code directly with BDD scenarios, reflecting user stories without the need for additional feature files, as is typical in the Cucumber framework. By aligning the test code directly with the BDD scenarios, this approach enhances readability and maintainability. The steps in the test method closely mirror the user story, ensuring that the test remains aligned with the intended functionality.
 
-To experience and evaluate the BDD report for this test, <a href="/report/#behaviors/0cad488ea037dc4ffceb5d7c1aa90d04/d7a4544ba7dc9dec/" target="_blank" rel="noopener noreferrer">**Click here to view BDD Test Automation Report Example**</a>
+To experience and evaluate the BDD report for this test, <a href="/report/#testresult/d7a4544ba7dc9dec" target="_blank" rel="noopener noreferrer">**Click here to view BDD Test Automation Report Example**</a>
