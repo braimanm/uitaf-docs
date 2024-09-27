@@ -18,14 +18,16 @@ Below is an example of the Domain Object for our Vehicle Insurance Quote example
 ```java title='VehicleInsuranceBDD.java'
 package com.yourcompany.example.domainobjects;
 
+import com.braimanm.ui.auto.context.WebDriverContext;
+import com.braimanm.ui.auto.pagecomponent.AliasedData;
+import com.braimanm.uitaf.support.DomainObjectModel;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.yourcompany.example.pageobjects.ClientInfoPO;
 import com.yourcompany.example.pageobjects.SummaryPO;
 import com.yourcompany.example.pageobjects.VehicleInfoPO;
-import ru.yandex.qatools.allure.annotations.Step;
-import ui.auto.core.pagecomponent.AliasedData;
-import ui.auto.core.support.DomainObjectModel;
-import ui.auto.core.support.TestContext;
+import io.qameta.allure.Param;
+import io.qameta.allure.Step;
+import static io.qameta.allure.model.Parameter.Mode.*;
 
 @XStreamAlias("vehicle-insurance-domain-object")
 public class VehicleInsuranceBDD extends DomainObjectModel {
@@ -36,36 +38,35 @@ public class VehicleInsuranceBDD extends DomainObjectModel {
 
     private VehicleInsuranceBDD() {}
 
-    public VehicleInsuranceBDD(TestContext context) {
+    public VehicleInsuranceBDD(WebDriverContext context) {
         this.context = context;
     }
 
     @Step("{0} the user is on Vehicle Insurance page")
-    public void is_on_vehicle_insurance_page(String gwt) {
+    public void is_on_vehicle_insurance_page(@Param(mode = HIDDEN) String gwt) {
         getDriver().get(appUrl.getData());
     }
 
     @Step("{0} the user populates the vehicle insurance information page with provided data and clicks next button")
-    public void populates_vehicle_insurance_information(String gwt) {
+    public void populates_vehicle_insurance_information(@Param(mode = HIDDEN) String gwt) {
         vehicleInfoPO.initPage(getContext());
         vehicleInfoPO.populate();
         vehicleInfoPO.next();
     }
 
     @Step("{0} the user populates the client information with provided data and clicks submit button")
-    public void populates_client_information_page(String gwt) {
+    public void populates_client_information_page(@Param(mode = HIDDEN) String gwt) {
         clientInfoPO.initPage(getContext());
         clientInfoPO.populate();
         clientInfoPO.submit();
     }
 
     @Step("{0} user validates that the summary page contains the expected fields and values")
-    public void validates_summary_page_contains_expected_fields_and_values(String gwt) {
+    public void validates_summary_page_contains_expected_fields_and_values(@Param(mode = HIDDEN) String gwt) {
+        hideStepParams();
         summaryPO.initPage(getContext());
         summaryPO.validate();
     }
-
-
 }
 ```
 
@@ -84,23 +85,27 @@ Below is how we can write this story using our UITAF BDD DSL. To utilize this DS
 ```java title='TestInsurancePolicyBDD.java'
 package com.yourcompany.example.tests;
 
+import com.braimanm.uitaf.testng.TestNGBase;
 import com.yourcompany.example.domainobjects.VehicleInsuranceBDD;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import ru.yandex.qatools.allure.annotations.Features;
-import ru.yandex.qatools.allure.annotations.Stories;
-import ui.auto.core.testng.TestNGBase;
-import static ui.auto.core.utils.GivenWhenThen.*;
-
+import static com.braimanm.uitaf.utils.GivenWhenThen.*;
 
 public class TestInsurancePolicyBDD extends TestNGBase {
 
-    @Features("Insurance Policy")
-    @Stories("BDD: User creates new insurance policy quote")
+    @Feature("Insurance Policy")
+    @Story("BDD: User creates new insurance policy quote")
     @Parameters("data-set")
+    @Description("Given the user is on Vehicle Insurance page\n" +
+            "When the user populates the vehicle insurance information page with provided data and clicks next button\n" +
+            "And the user populates the client information with provided data and clicks submit button\n" +
+            "Then user validates that the summary page contains the expected fields and values")
     @Test
-    public void testCreatePolicy(@Optional("data/random-data.xml") String dataSet){
+    public void testCreatePolicyQuoteBDD(@Optional("data/random-data.xml") String dataSet){
         VehicleInsuranceBDD user = new VehicleInsuranceBDD(getContext()).fromResource(dataSet);
 
         Given(user::is_on_vehicle_insurance_page);
@@ -110,6 +115,7 @@ public class TestInsurancePolicyBDD extends TestNGBase {
     }
 
 }
+
 ```
 
 :::info
@@ -118,4 +124,4 @@ The UITAF BDD DSL used in this test is valid Java code compatible with Java 8 an
 
 A significant advantage of this BDD approach is its integration of test code directly with BDD scenarios, reflecting user stories without the need for additional feature files, as is typical in the Cucumber framework. By aligning the test code directly with the BDD scenarios, this approach enhances readability and maintainability. The steps in the test method closely mirror the user story, ensuring that the test remains aligned with the intended functionality.
 
-To experience and evaluate the BDD report for this test, <a href="/report/#xUnit/cd4cc2854a677162/7fcad9f6e16ee183?expanded=true" target="_blank" rel="noopener noreferrer">**Click here to view BDD Test Automation Report Example**</a>
+To experience and evaluate the BDD report for this test, <a href="/report/#behaviors/0cad488ea037dc4ffceb5d7c1aa90d04/d7a4544ba7dc9dec/" target="_blank" rel="noopener noreferrer">**Click here to view BDD Test Automation Report Example**</a>

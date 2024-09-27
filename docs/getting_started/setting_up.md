@@ -36,6 +36,8 @@ project_example/
 │
 ├── .gitignore
 ├── pom.xml
+├── mvnw
+├── mvnw.cmd
 └── README.md
 ```
 
@@ -53,6 +55,8 @@ project_example/
 - **environments.xml:** - XML file for environment configurations.
 - **.gitignore:** - Specifies files and directories to ignore in version control.
 - **pom.xml:** - Maven configuration file for managing dependencies and build configuration.
+- **mnv:** - Maven wrapper for Linux and macOS operating systems.
+- **mnv.cmd:** - Maven wrapper for Windows operating system.
 - **README.md:** - Provides an overview and instructions for the project.
 
 ## Adding UITAF to Your Maven Project
@@ -61,17 +65,11 @@ UITAF is hosted on Maven Central, which simplifies the integration process. To i
 
 ```xml title="pom.xml"
 ...
-<properties>
-    <compiler.version>1.8</compiler.version>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <ui_auto_core_version>2.7.1</ui_auto_core_version>
-</properties>
-...
-<dependency>
-    <groupId>com.googlecode.page-component</groupId>
-    <artifactId>ui_auto_core</artifactId>
-    <version>${ui_auto_core_version}</version>
-</dependency>
+    <dependency>
+        <groupId>com.braimanm</groupId>
+        <artifactId>uitaf</artifactId>
+        <version>3.0.1</version>
+    </dependency>
 ...
 ```
 
@@ -85,20 +83,27 @@ UITAF is hosted on Maven Central, which simplifies the integration process. To i
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yourcompany</groupId>
-    <artifactId>example</artifactId>
+    <artifactId>test-lab-example</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <compiler.version>1.8</compiler.version>
+        <java.version>11</java.version>
+        <uitaf.version>3.0.1</uitaf.version>
+        <aspect-version>1.9.19</aspect-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <ui_auto_core_version>2.7.1</ui_auto_core_version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.googlecode.page-component</groupId>
-            <artifactId>ui_auto_core</artifactId>
-            <version>${ui_auto_core_version}</version>
+            <groupId>com.braimanm</groupId>
+            <artifactId>uitaf</artifactId>
+            <version>${uitaf.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+            <version>${aspect-version}</version>
         </dependency>
     </dependencies>
 
@@ -108,36 +113,36 @@ UITAF is hosted on Maven Central, which simplifies the integration process. To i
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.10.1</version>
                 <configuration>
-                    <source>${compiler.version}</source>
-                    <target>${compiler.version}</target>
-                    <encoding>UTF-8</encoding>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>aspectj-maven-plugin</artifactId>
-                <version>1.10</version>
+                <version>1.14.0</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.aspectj</groupId>
                         <artifactId>aspectjtools</artifactId>
-                        <version>1.8.3</version>
+                        <version>${aspect-version}</version>
                     </dependency>
                 </dependencies>
                 <configuration>
                     <showWeaveInfo>false</showWeaveInfo>
                     <Xlint>ignore</Xlint>
-                    <source>${compiler.version}</source>
-                    <target>${compiler.version}</target>
-                    <complianceLevel>${compiler.version}</complianceLevel>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <complianceLevel>${java.version}</complianceLevel>
                     <encoding>UTF-8</encoding>
                     <weaveDependencies>
                         <weaveDependency>
-                            <groupId>ru.yandex.qatools.allure</groupId>
-                            <artifactId>allure-java-aspects</artifactId>
+                            <groupId>io.qameta.allure</groupId>
+                            <artifactId>allure-java-commons</artifactId>
                         </weaveDependency>
                     </weaveDependencies>
                 </configuration>
@@ -153,7 +158,7 @@ UITAF is hosted on Maven Central, which simplifies the integration process. To i
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.4.1</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -175,7 +180,7 @@ UITAF is hosted on Maven Central, which simplifies the integration process. To i
                             </filters>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>ui.auto.core.RunTests</mainClass>
+                                    <mainClass>com.braimanm.uitaf.RunTests</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

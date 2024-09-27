@@ -15,7 +15,7 @@ To effectively utilize UITAF for your test automation projects, ensure that your
 
 2. **Java Development Kit (JDK):**
 
-    - **Java 8 SDK:** UITAF is built to be compatible with Java 8. Ensure that the Java 8 SDK is properly installed and configured on your development machine. This version of the JDK provides the necessary runtime environment and development tools required for compiling, debugging, and running UITAF-based test scripts.
+    - **Java SDK:** UITAF is built to be compatible with Java 11 and higher. Ensure that the Java JDK is properly installed and configured on your development machine.
 
 3. **Build Automation Tool:**
 

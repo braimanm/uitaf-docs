@@ -4,13 +4,13 @@ description: ''
 
 # Test Automation Example
 
-This test automation example uses the UITAF open-source framework to perform UI testing on the Vehicle Insurance Quote minimalistic application located at [http://uitaf.org/test/](http://uitaf.org/test/). The test is executed using the Chrome browser and is supported only by Java&nbsp;8.
+This test automation example uses the UITAF open-source framework to perform UI testing on the Vehicle Insurance Quote minimalistic application located at [http://uitaf.org/test/](http://uitaf.org/test/). The test is set up to be executed in the Chrome browser.
 
 ## [Prerequisites](/getting_started/prerequsits)
 
 Before running the test, ensure that the following software is installed on the target machine:
 
-1. **JDK Version 8**: Ensure that Java 8 is installed, as the test is only supported by this version.
+1. **JDK**: Ensure that Java 11 or higher is installed on the machine.
 2. **Git**: Needed to clone the project repository.
 3. **Chrome Browser**: Ensure Chrome browser is installed on the machine where the test will run.
 4. **IntelliJ IDEA** (Optional): You can use IntelliJ to open and work with the project as a Maven project.
@@ -44,14 +44,12 @@ To build and execute the test automation solution, follow these steps:
     mvnw.cmd clean package
     ```
 
-4. **Execute the Solution**:
-   - After the build is complete, execute the solution by running:
+4. **Execute the Tests**:
+   - After the build is complete, execute the tests by running:
 
     ```bash
      java -jar target/example.jar
     ```
-
-   - This command will start the test execution.
 
 ## Test Execution Details
 

@@ -65,18 +65,21 @@ public class VehicleInfoPO extends PageObjectModel {
         autoFillPage();
     }
 
-    @Step("Click Submit Button")
+    @Step("Click Next Button")
     public void next() {
         nextButton.click();
-        WebHelper.getWebDriverWait().until(ExpectedConditions.invisibilityOfElementLocated(nextButton.getLocator()));
+        WebDriverUtils.getWebDriverWait().until(ExpectedConditions.invisibilityOfElementLocated(nextButton.getLocator()));
     }
 
     //Generate report entry for each populated component
-    @Step("Populate field \"{0}\" with value \"{1}\"")
     @Override
-    protected void reportForAutoFill(String fieldName, String value) {}
+    @Step("Populate field \"{0}\" with value \"{1}\"")
+    protected void reportForAutoFill(String fieldName, String value) {
+        super.reportForAutoFill(fieldName, value);
+    }
 
 }
+
 ```
 
 This Page Object Model **(POM)** class adheres to the **Page Object design pattern** and represents the Vehicle Information page. Each POM class in the UITAF framework should extend the **PageObjectModel** class. The fields within the POM class correspond to visible and interactable components on the page. Each field is annotated with the **@FindBy** annotation, which is used to locate web elements using **CSS**, **XPath**, or other valid Selenium selectors.
@@ -127,13 +130,15 @@ public class ClientInfoPO extends PageObjectModel {
     @Step("Click Submit Button")
     public void submit() {
         submitButton.click();
-        WebHelper.getWebDriverWait().until(ExpectedConditions.invisibilityOfElementLocated(submitButton.getLocator()));
+        WebDriverUtils.getWebDriverWait().until(ExpectedConditions.invisibilityOfElementLocated(submitButton.getLocator()));
     }
 
     //Generate report entry for each populated component
-    @Step("Populate field \"{0}\" with value \"{1}\"")
     @Override
-    protected void reportForAutoFill(String fieldName, String value) {}
+    @Step("Populate field \"{0}\" with value \"{1}\"")
+    protected void reportForAutoFill(String fieldName, String value) {
+        super.reportForAutoFill(fieldName, value);
+    }
 
 }
 
@@ -221,15 +226,18 @@ public class SummaryPO extends PageObjectModel {
 
     @Step("Validate that the \"{0}\" field has the value \"{1}\"")
     private void reportForValidation(String name, String value) {
+        hideStepParams();
     }
 
     @Step("Validate that the \"{0}\" field is hidden")
     private void validateFieldIsNotDisplayed(String fieldName, PageComponent component) {
-        Assertions.assertThat(WebHelper.isDisplayed(component))
+        hideStepParams();
+        Assertions.assertThat(WebDriverUtils.isDisplayed(component))
                 .withFailMessage("Field " + fieldName + " is displayed but should be hidden!").isFalse();
     }
 
 }
+
 ```
 
 The final POM, which represents the Summary page, includes relevant page components with specific locators and validation logic. This logic verifies all previously entered values from earlier pages. Additionally, it contains validation to ensure that certain fields are visible or hidden based on the selected vehicleType field.
@@ -260,7 +268,7 @@ public class VehicleInsuranceDO extends DomainObjectModel {
 
     private VehicleInsuranceDO() {}
 
-    public VehicleInsuranceDO(TestContext context) {
+    public VehicleInsuranceDO(WebDriverContext context) {
         this.context = context;
     }
 
@@ -285,6 +293,7 @@ public class VehicleInsuranceDO extends DomainObjectModel {
         summaryPO.validate();
     }
 }
+
 ```
 
 Method breakdown for vehicleInsuranceDO:
@@ -526,40 +535,41 @@ In this scenario, a single test class is executed with different datasets, each 
 
 <suite name="Policy suite" verbose="1" parallel="tests">
 
-    <test name="Automobile Policy Creation">
+    <test name="Automobile Policy Quote">
         <parameter name="data-set" value="data/automobile-data.xml"/>
         <classes>
             <class name="com.yourcompany.example.tests.TestInsurancePolicy"/>
         </classes>
     </test>
 
-    <test name="Truck Policy Creation">
+    <test name="Truck Policy Quote">
         <parameter name="data-set" value="data/truck-data.xml"/>
         <classes>
             <class name="com.yourcompany.example.tests.TestInsurancePolicy"/>
         </classes>
     </test>
 
-    <test name="Motorcycle Policy Creation">
+    <test name="Motorcycle Policy Quote">
         <parameter name="data-set" value="data/motorcycle-data.xml"/>
         <classes>
             <class name="com.yourcompany.example.tests.TestInsurancePolicy"/>
         </classes>
     </test>
 
-    <test name="Random Policy Creation">
+    <test name="Random Policy Quote">
         <parameter name="data-set" value="data/random-data.xml"/>
         <classes>
             <class name="com.yourcompany.example.tests.TestInsurancePolicy"/>
         </classes>
     </test>
 
-    <test name="Random Policy Creation BDD">
+    <test name="BDD Random Policy Quote">
         <parameter name="data-set" value="data/random-data.xml"/>
         <classes>
             <class name="com.yourcompany.example.tests.TestInsurancePolicyBDD"/>
         </classes>
     </test>
+
 
 </suite>
 ```
