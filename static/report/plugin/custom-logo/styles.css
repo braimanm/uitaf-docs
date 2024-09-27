@@ -1,0 +1,19 @@
+.side-nav__brand {
+  background: url('uitaf-logo.svg') no-repeat left center !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.side-nav__brand-text {
+    visibility: hidden !important;
+    position: relative !important;
+}
+
+.side-nav__brand-text:after {
+    visibility: visible;
+    position: absolute;
+    margin-left: 10px;
+    top: 0;
+    left: 0;
+    content: "UITAF";
+}

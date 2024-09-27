@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicle-insurance-domain-object>
+  <aliases>
+    <lastName>Scurry</lastName>
+    <country>CANADA</country>
+    <zipCode>S0G 0S0</zipCode>
+    <test-name>+(Random)</test-name>
+    <occupation>Chef</occupation>
+    <gender>Male</gender>
+    <city>Colfax</city>
+    <seats>3</seats>
+    <enginePerformance>266</enginePerformance>
+    <licensePlate>PLHZ-157</licensePlate>
+    <payload></payload>
+    <model></model>
+    <make>Skoda</make>
+    <vehicleType>Automobile</vehicleType>
+    <annualMileage>75226</annualMileage>
+    <website>https://feltpan.com</website>
+    <address>Country: CANADA, Street #: 123, Street Name: Setterland, City: Colfax, Province Name: Saskatchewan, Province Code: SK, Postal Code: S0G 0S0</address>
+    <manufacturerDate>2001-06-17</manufacturerDate>
+    <dateOfBirth>1973-11-07</dateOfBirth>
+    <cylinderCapacity></cylinderCapacity>
+    <url>https://uitaf.org/test/</url>
+    <firstName>Normand</firstName>
+    <fuelType>Electric Power</fuelType>
+    <streetAddress>123 Setterland</streetAddress>
+    <hobbies>Gardening</hobbies>
+    <totalWeight></totalWeight>
+    <listPrice>59217</listPrice>
+  </aliases>
+  <appUrl>${url}</appUrl>
+  <vehicleInfoPO>
+    <vehicleType>${vehicleType}</vehicleType>
+    <make>${make}</make>
+    <enginePerformance>${enginePerformance}</enginePerformance>
+    <manufacturerDate>${manufacturerDate}</manufacturerDate>
+    <seats>${seats}</seats>
+    <fuelType>${fuelType}</fuelType>
+    <listPrice>${listPrice}</listPrice>
+    <licensePlate>${licensePlate}</licensePlate>
+    <annualMileage>${annualMileage}</annualMileage>
+    <payload>${payload}</payload>
+    <totalWeight>${totalWeight}</totalWeight>
+    <model>${model}</model>
+    <cylinderCapacity>${cylinderCapacity}</cylinderCapacity>
+  </vehicleInfoPO>
+  <clientInfoPO>
+    <firstName>${firstName}</firstName>
+    <lastName>${lastName}</lastName>
+    <dateOfBirth>${dateOfBirth}</dateOfBirth>
+    <gender>${gender}</gender>
+    <streetAddress>${streetAddress}</streetAddress>
+    <country>${country}</country>
+    <zipCode>${zipCode}</zipCode>
+    <city>${city}</city>
+    <occupation>${occupation}</occupation>
+    <hobbies>${hobbies}</hobbies>
+    <website>${website}</website>
+    <picture>data/face.png</picture>
+  </clientInfoPO>
+  <summaryPO>
+    <vehicleType>${vehicleType}</vehicleType>
+    <make>${make}</make>
+    <enginePerformance>${enginePerformance}</enginePerformance>
+    <manufacturerDate>${manufacturerDate}</manufacturerDate>
+    <seats>${seats}</seats>
+    <fuelType>${fuelType}</fuelType>
+    <listPrice>${listPrice}</listPrice>
+    <licensePlate>${licensePlate}</licensePlate>
+    <annualMileage>${annualMileage}</annualMileage>
+    <payload>${payload}</payload>
+    <totalWeight>${totalWeight}</totalWeight>
+    <model>${model}</model>
+    <cylinderCapacity>${cylinderCapacity}</cylinderCapacity>
+    <firstName>${firstName}</firstName>
+    <lastName>${lastName}</lastName>
+    <dateOfBirth>${dateOfBirth}</dateOfBirth>
+    <gender>${gender}</gender>
+    <streetAddress>${streetAddress}</streetAddress>
+    <country>${country}</country>
+    <zipCode>${zipCode}</zipCode>
+    <city>${city}</city>
+    <occupation>${occupation}</occupation>
+    <hobbies>${hobbies}</hobbies>
+    <website>${website}</website>
+    <picture>face.png</picture>
+  </summaryPO>
+</vehicle-insurance-domain-object>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicle-insurance-domain-object>
+  <aliases>
+    <annualMileage>10000</annualMileage>
+    <lastName>Brown</lastName>
+    <country>USA</country>
+    <zipCode>10010</zipCode>
+    <website>www.cars.com</website>
+    <test-name>+(Automobile)</test-name>
+    <occupation>Business Analyst</occupation>
+    <gender>Male</gender>
+    <city>New York</city>
+    <manufacturerDate>2023-10-12</manufacturerDate>
+    <dateOfBirth>1975-11-18</dateOfBirth>
+    <seats>5</seats>
+    <url>https://uitaf.org/test/</url>
+    <enginePerformance>192</enginePerformance>
+    <firstName>John</firstName>
+    <licensePlate>ABC123</licensePlate>
+    <fuelType>Petrol</fuelType>
+    <streetAddress>101 Big Street</streetAddress>
+    <hobbies>Cars Collector</hobbies>
+    <make>Audi</make>
+    <vehicleType>Automobile</vehicleType>
+    <listPrice>60000</listPrice>
+  </aliases>
+  <appUrl>${url}</appUrl>
+  <vehicleInfoPO>
+    <vehicleType>${vehicleType}</vehicleType>
+    <make>${make}</make>
+    <enginePerformance>${enginePerformance}</enginePerformance>
+    <manufacturerDate>${manufacturerDate}</manufacturerDate>
+    <seats>${seats}</seats>
+    <fuelType>${fuelType}</fuelType>
+    <listPrice>${listPrice}</listPrice>
+    <licensePlate>${licensePlate}</licensePlate>
+    <annualMileage>${annualMileage}</annualMileage>
+  </vehicleInfoPO>
+  <clientInfoPO>
+    <firstName>${firstName}</firstName>
+    <lastName>${lastName}</lastName>
+    <dateOfBirth>${dateOfBirth}</dateOfBirth>
+    <gender>${gender}</gender>
+    <streetAddress>${streetAddress}</streetAddress>
+    <country>${country}</country>
+    <zipCode>${zipCode}</zipCode>
+    <city>${city}</city>
+    <occupation>${occupation}</occupation>
+    <hobbies>${hobbies}</hobbies>
+    <website>${website}</website>
+    <picture>data/face.png</picture>
+  </clientInfoPO>
+  <summaryPO>
+    <vehicleType>${vehicleType}</vehicleType>
+    <make>${make}</make>
+    <enginePerformance>${enginePerformance}</enginePerformance>
+    <manufacturerDate>${manufacturerDate}</manufacturerDate>
+    <seats>${seats}</seats>
+    <fuelType>${fuelType}</fuelType>
+    <listPrice>${listPrice}</listPrice>
+    <licensePlate>${licensePlate}</licensePlate>
+    <annualMileage>${annualMileage}</annualMileage>
+    <firstName>${firstName}</firstName>
+    <lastName>${lastName}</lastName>
+    <dateOfBirth>${dateOfBirth}</dateOfBirth>
+    <gender>${gender}</gender>
+    <streetAddress>${streetAddress}</streetAddress>
+    <country>${country}</country>
+    <zipCode>${zipCode}</zipCode>
+    <city>${city}</city>
+    <occupation>${occupation}</occupation>
+    <hobbies>${hobbies}</hobbies>
+    <website>${website}</website>
+    <picture>face.png</picture>
+  </summaryPO>
+</vehicle-insurance-domain-object>

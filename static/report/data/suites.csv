@@ -1,0 +1,9 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7036","testCreatePolicyQuote(Motorcycle)","Policy suite","Thu Sep 26 22:28:43 EDT 2024","passed","Thu Sep 26 22:28:50 EDT 2024","com.yourcompany.example.tests.TestInsurancePolicy","Motorcycle Policy Quote","com.yourcompany.example.tests.TestInsurancePolicy","testCreatePolicyQuote"
+"","7111","testCreatePolicyQuote(Random)","Policy suite","Thu Sep 26 22:28:43 EDT 2024","passed","Thu Sep 26 22:28:50 EDT 2024","com.yourcompany.example.tests.TestInsurancePolicy","Random Policy Quote","com.yourcompany.example.tests.TestInsurancePolicy","testCreatePolicyQuote"
+"","7213","testCreatePolicyQuote(Truck)","Policy suite","Thu Sep 26 22:28:43 EDT 2024","passed","Thu Sep 26 22:28:50 EDT 2024","com.yourcompany.example.tests.TestInsurancePolicy","Truck Policy Quote","com.yourcompany.example.tests.TestInsurancePolicy","testCreatePolicyQuote"
+"","6834","testCreatePolicyQuote(Automobile)","Policy suite","Thu Sep 26 22:28:43 EDT 2024","passed","Thu Sep 26 22:28:50 EDT 2024","com.yourcompany.example.tests.TestInsurancePolicy","Automobile Policy Quote","com.yourcompany.example.tests.TestInsurancePolicy","testCreatePolicyQuote"
+"Given the user is on Vehicle Insurance page
+When the user populates the vehicle insurance information page with provided data and clicks next button
+And the user populates the client information with provided data and clicks submit button
+Then user validates that the summary page contains the expected fields and values","6891","testCreatePolicyQuoteBDD(Random)","Policy suite","Thu Sep 26 22:28:43 EDT 2024","passed","Thu Sep 26 22:28:50 EDT 2024","com.yourcompany.example.tests.TestInsurancePolicyBDD","BDD Random Policy Quote","com.yourcompany.example.tests.TestInsurancePolicyBDD","testCreatePolicyQuoteBDD"
