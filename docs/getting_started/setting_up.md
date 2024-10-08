@@ -68,7 +68,7 @@ UITAF is hosted on Maven Central, which simplifies the integration process. To i
     <dependency>
         <groupId>com.braimanm</groupId>
         <artifactId>uitaf</artifactId>
-        <version>3.0.1</version>
+        <version>3.1.0</version>
     </dependency>
 ...
 ```
@@ -88,7 +88,7 @@ UITAF is hosted on Maven Central, which simplifies the integration process. To i
 
     <properties>
         <java.version>11</java.version>
-        <uitaf.version>3.0.1</uitaf.version>
+        <uitaf.version>3.1.0</uitaf.version>
         <aspect-version>1.9.19</aspect-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
