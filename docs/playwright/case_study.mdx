@@ -1,0 +1,194 @@
+---
+description: ''
+---
+
+# Test Automation Example using Playwright
+
+UITAF is designed with a strong separation of concerns (SOC) and a high level of abstraction, meaning it doesn’t rely on any single test automation framework, making it inherently flexible. To demonstrate this, I created an example integration using Playwright, showing how UITAF can adapt to other Java-based test automation tools. This required a rewrite of the Selenium PageObject factory, as UITAF is ideally suited for the PageObject design pattern introduced by Martin Fowler, while Playwright lacks a built-in PageObject factory. The original [Automation Example](/test_lab/example) was adapted to use Playwright, illustrating how UITAF can smoothly integrate with different test automation frameworks.
+
+This is a work in progress, and once fully developed, I will post additional documentation here. However, the test code is not significantly different from the original. The main change is that the @FindBy annotation and its Selenium variants have been replaced with an @Locate annotation, which accepts the standard argument for Playwright’s locator() method. You can also implement your own locator strategy to support more complex locator logic.
+
+## Prerequisit
+
+Before running the test, ensure that the following software is installed on the target machine:
+
+1. **JDK**: Ensure that Java 11 or higher is installed on the machine.
+2. **Git**: Needed to clone the project repository.
+3. **Chrome Browser**: Ensure Chrome browser is installed on the machine where the test will run.
+4. **IntelliJ IDEA** (Optional): You can use IntelliJ to open and work with the project as a Maven project.
+
+## Setup and Execution
+
+To build and execute the test automation solution, follow these steps:
+
+1. **Clone the Repository**:
+   - Open a terminal and run the following command to clone the repository:
+
+    ```bash
+    git clone https://github.com/braimanm/test-lab-example-playwright.git
+    ```
+
+2. **Navigate to the Project Folder**:
+    - Change the directory to the project folder:
+
+    ```bash
+    cd test-lab-example-playwright
+    ```
+
+3. **Build the Solution**:
+   - Execute the following command to build the solution:
+
+    ```bash title="For Linux/macOS:"
+    ./mvnw clean package
+    ```
+
+    ```bash title="For Windows:"
+    mvnw.cmd clean package
+    ```
+
+4. **Execute the Tests**:
+   - After the build is complete, execute the tests by running:
+
+    ```bash
+     java -jar target/example.jar
+    ```
+
+## Test Execution Details
+
+- The test will launch **five instances of the Chrome browser** and run **five different test cases in parallel**.
+- Upon completion of the test execution, a detailed <a href="/report/" target="_blank" rel="noopener noreferrer">**report**</a> with the results will be automatically launched in your default web browser.
+
+import CodeBlock from '@theme/CodeBlock';
+
+## Side-by-Side Comparison: Selenium vs. Playwright
+
+In the following examples, the only difference is that the **@FindBy** annotation used in __Selenium__ has been replaced with the **@Locate** annotation for __Playwright__.
+
+<div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+  
+  <div style={{ flex: 1, minWidth: '400px' }}>
+    <CodeBlock language="java">
+{`// Selenium based Page Object
+package com.yourcompany.example.pageobjects;
+
+import ...
+
+@XStreamAlias("vehicle-info-page-object")
+public class VehicleInfoPO extends PageObjectModel {
+    @FindBy(css = "select#vehicleType")
+    private SelectComponent vehicleType;
+    @FindBy(css = "select#make")
+    private SelectComponent make;
+    @FindBy(css = "input#enginePerformance")
+    private WebComponent enginePerformance;
+    @FindBy(css = "input#dateOfManufacture")
+    private DateComponent manufacturerDate;
+    @FindBy(css = "input#numberOfSeats")
+    private WebComponent seats;
+    @FindBy(css = "select#fuelType")
+    private SelectComponent fuelType;
+    @FindBy(css = "input#listPrice")
+    private WebComponent listPrice;
+    @FindBy(css = "input#licensePlateNumber")
+    private WebComponent licensePlate;
+    @FindBy(css = "input#annualMileage")
+    private WebComponent annualMileage;
+    //Truck related fields
+    @FindBy(css = "input#payload")
+    private WebComponent payload;
+    @FindBy(css = "input#totalWeight")
+    private WebComponent totalWeight;
+    //Motorcycle related fields
+    @FindBy(css = "input#model")
+    private WebComponent model;
+    @FindBy(css = "input#cylinderCapacity")
+    private WebComponent cylinderCapacity;
+    @Data(skip = true)
+    private WebComponent nextButton;
+
+    @Step("Populate Vehicle Info form with provided data")
+    public void populate() {
+        autoFillPage();
+    }
+
+    @Step("Click Next Button")
+    public void next() {
+        nextButton.click();
+        WebDriverUtils.getWebDriverWait().until(ExpectedConditions.invisibilityOfElementLocated(nextButton.getLocator()));
+    }
+
+    //Generate report entry for each populated component
+    @Override
+    @Step("Populate field \"{0}\" with value \"{1}\"")
+    protected void reportForAutoFill(String fieldName, String value) {
+        super.reportForAutoFill(fieldName, value);
+    }
+
+}
+`}
+    </CodeBlock>
+  </div>
+  
+  <div style={{ flex: 1, minWidth: '400px' }}>
+    <CodeBlock language="java">
+{`// Playwright based Page Object
+package com.yourcompany.example.pageobjects;
+
+import ...
+
+@XStreamAlias("vehicle-info-page-object")
+public class VehicleInfoPO extends PageObjectModel<Page> {
+    @Locate("select#vehicleType")
+    private SelectComponent vehicleType;
+    @Locate("select#make")
+    private SelectComponent make;
+    @Locate("input#enginePerformance")
+    private WebComponent enginePerformance;
+    @Locate("input#dateOfManufacture")
+    private WebComponent manufacturerDate;
+    @Locate("input#numberOfSeats")
+    private WebComponent seats;
+    @Locate("select#fuelType")
+    private SelectComponent fuelType;
+    @Locate("input#listPrice")
+    private WebComponent listPrice;
+    @Locate("input#licensePlateNumber")
+    private WebComponent licensePlate;
+    @Locate("input#annualMileage")
+    private WebComponent annualMileage;
+    //Truck related fields
+    @Locate("input#payload")
+    private WebComponent payload;
+    @Locate("input#totalWeight")
+    private WebComponent totalWeight;
+    //Motorcycle related fields
+    @Locate("input#model")
+    private WebComponent model;
+    @Locate("input#cylinderCapacity")
+    private WebComponent cylinderCapacity;
+    @Data(skip = true)
+    private WebComponent nextButton;
+
+    @Step("Populate Vehicle Info form with provided data")
+    public void populate() {
+        autoFillPage();
+    }
+
+    @Step("Click Next Button")
+    public void next() {
+        nextButton.click();
+    }
+
+    //Generate report entry for each populated component
+    @Override
+    @Step("Populate field \"{0}\" with value \"{1}\"")
+    protected void reportForAutoFill(String fieldName, String value) {
+        super.reportForAutoFill(fieldName, value);
+    }
+
+}
+`}
+    </CodeBlock>
+  </div>
+
+</div>
